@@ -30,6 +30,7 @@ let fulldate = monthName + "/" + d.getDate() +"/" + year + " " + d.getHours() +
 document.getElementById("currentdate").textContent = fulldate;
 document.getElementById("year").textContent = year;
 
+
 try {
     let options = {
         weekday: "long",//'long' > Tuesday or January, 'short' > Tue or Feb

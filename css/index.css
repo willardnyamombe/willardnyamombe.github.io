@@ -27,6 +27,8 @@ h1 {
     justify-self: center;
     color: white;
     font-style: oblique;
+    font-family: Girassol;
+    font-weight: 400;
     font-size: 30px;
     grid-row: 1/2;
     text-align: center;

@@ -54,7 +54,12 @@ img {
 }
 a {
     text-decoration-color: blue;
+    /* background-color: green ; */
     font-style: oblique;
+    transition: background-color .5s; 
+}
+a:hover {
+    background-color: violet;
 }
 footer {
     padding: 30px;

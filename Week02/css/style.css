@@ -1,8 +1,60 @@
 body {
-    background-color: beige;
+    background-color: white;
 }
 
 main {
     display: grid;
     grid-template-columns: 1fr;
+    gap: 20px;
+    margin: 20px;
+}
+header {
+    color: black;
+    font-family: 'Girasso', sans-serif;
+    text-align: center;
+}
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+footer {
+    padding: 30px;
+    justify-items: center;
+    width: auto;
+    height: auto;
+    background-color: white;
+    font-style: oblique;
+    /* grid-column: 1/4;
+    grid-row: 3/4; */
+    /* border-radius: 20px; */
+    color: black ;
+    text-align: center;
+}
+#forfooter {color: rgb(151, 151, 15);}
+
+#window1{
+    background-color: rgb(125, 241, 230);
+    color: black;
+    font-family: 'Girasso', sans-serif;
+    text-align: center;
+}
+
+#window2{
+    background-color: white;
+    color: black;
+    font-family: 'Girasso', sans-serif;
+    text-align: center;
+}
+#window3{
+    background-color: yellowgreen;
+    color: black;
+    font-family: 'Girasso', sans-serif;
+    text-align: center;
+}
+hr {
+    color: blueviolet;
+}
+p {
+    text-align: center;
+    padding: 10px;
 }

@@ -1,6 +1,6 @@
 @media only screen and (min-width: 63.25em) {
     body {
-    background-color: red;
+    background-color: white;
 }
 main {
     grid-template-columns: 1fr 1fr 1fr;

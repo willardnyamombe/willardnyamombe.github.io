@@ -1,5 +1,5 @@
 window.addEventListener('load', () => {
-    const hambuttom =document.queruSelector('.ham');
+    const hambutton =document.querySelector('.ham');
     const mainnav = document.querySelector('#navigation');
     
     hambutton.addEventListener('click', () => {

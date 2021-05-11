@@ -4,17 +4,61 @@
 header{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    font-size: 10px;
+    padding: 10px;
+    /* background-color: white; */
 }
 
 header p{
     grid-column-start: 3;
 }
 body {
-    background-color: gainsboro;
+    background-color: white;
     margin: 0 auto;
     width: 375px;
     border:solid 1px black;
     border-radius: 20px;
-    padding: 10px;
+    /* padding: 50px; */
     font-family: 'Noto Sans JP', sans-serif;
+    
+}
+main{
+    position: relative;
+    padding: 10px;
+    /* background-color: white; */
+}
+#first-row p{
+    font-size: 10px;
+}
+#first-row div {
+    text-align: center;
+}
+#plane {
+    justify-self: center;
+    padding-top: 30%;
+}
+#second-row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    background-color: white;
+}
+#second-row p{
+    font-size: 20px;
+}
+
+#first-row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#bar-code p{
+    justify-self: center;
+    text-align: center;
+}
+#bar-code img{
+    justify-self: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }

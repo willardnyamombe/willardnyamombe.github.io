@@ -13,7 +13,7 @@ main {
 header {
     justify-items: center;
     width: auto;
-    background-color: navy;
+    background-color: lightcoral;
     font-style: oblique;
     grid-column: 1/4;
     grid-row: 1/2;
@@ -38,7 +38,7 @@ h1 {
 
 img {
     /* border-radius: 25px; */
-    width: 50%;
+    width: 60%;
     height: 230px;
     justify-self: right;
     /* justify-content: center; */
@@ -68,7 +68,7 @@ footer {
     justify-items: center;
     width: auto;
     height: auto;
-    background-color: navy;
+    background-color: lightcoral;
     font-style: oblique;
     grid-column: 1/4;
     grid-row: 3/4;

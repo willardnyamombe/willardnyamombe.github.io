@@ -1,11 +1,12 @@
-body {
-    background-color: white;
+
+p{
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 nav{
     margin: 0 auto;
     max-width: 360px;
-    background-color: #ce1717;
+    background-color: peachpuff;
 }
 
 #navigation {

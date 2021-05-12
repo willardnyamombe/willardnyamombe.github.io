@@ -1,4 +1,12 @@
 @media only screen and (min-width: 34.5em) {
+    body {
+        background-color: lightcoral;
+    }
+    main{
+        max-width: 800px;
+        margin: auto auto;
+        background-color: seashell;
+    }
     nav{max-width: 100%;}
     #navigation{
         grid-template-columns: repeat(7,auto);

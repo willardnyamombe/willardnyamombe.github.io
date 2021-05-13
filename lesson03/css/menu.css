@@ -1,12 +1,25 @@
-
+body {
+    display: block;
+    max-width: 700px;
+        margin: auto auto;
+        background-color: lightcoral;
+}
+main{
+    max-width: 800px;
+    margin: auto auto;
+    background-color: seashell;
+    text-align: center;
+}
 p{
     font-family: 'Noto Sans JP', sans-serif;
+    font-size: 20px;
 }
 
 nav{
     margin: 0 auto;
     max-width: 360px;
     background-color: peachpuff;
+    font-family: Roboto, sans-serif;
 }
 
 #navigation {
@@ -42,4 +55,26 @@ nav{
 }
 #navigation.responsive li{
     display: block;
+}
+img{
+    max-width: 500px;
+}
+h1{
+    font-family: Roboto, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+h2{
+    font-family: lato, sans-serif;
+    font-size: 35px;
+}
+#scenarios {
+    text-align: left;
+}
+footer{
+    margin: 0 auto;
+    max-width: 700px;
+    background-color: peachpuff;
+    font-family: Roboto, sans-serif;
+    text-align: center;
 }

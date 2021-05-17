@@ -1,0 +1,60 @@
+#fullwidth {
+    width: 100%;
+    background-color: purple;
+    color: white;
+    padding: 10px;
+    border: 12px solid black;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+}
+#image {
+    position: relative;
+    width: 500px;
+    margin: 0 auto;/* move image to the center*/
+}
+#image img{
+    width: 500px;
+}
+.overlay{
+    position: absolute;
+    width: 50px;
+    right:50%; /*this moves the text on top of the img or background*/
+    background-color: white;
+    height:50px;
+    top: 50%;
+}
+.overlayprac {
+    position: absolute;
+    width: 100px;/* increase or decrease the size of the box carrying the text*/
+    right:50%; /*this moves the text on top of the img or background*/
+    background-color: rgb(177, 34, 34);
+    height:50px;
+    top: 90%;
+
+}
+
+#image2{
+    /* use grid to section out the image for easy text placement */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 50px 1fr 1fr 1fr 1fr;
+    width: 500px;
+}
+.img {
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    width: 500px;
+    z-index:6;
+}
+.overlay2 {
+    grid-column:2;
+    grid-row: 2;
+    z-index: 12;
+}
+.overlay2prac{
+    grid-column:2;
+    grid-row: 4;
+    z-index: 12;
+}

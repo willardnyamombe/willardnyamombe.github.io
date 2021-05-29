@@ -1,6 +1,9 @@
 body {
-    background-color: seashell;
+    background-color: white;
     justify-content: space-around;
+    max-width: 100%;
+    margin: auto auto;
+    text-align: left;
 }
 nav{
     margin: 0 auto;
@@ -76,21 +79,32 @@ header p{
 } */
 
 main{
-    margin: block;
+    /* margin: block; */
     max-width: 100%;
-    margin: auto auto;
+    /* margin: 0 auto; */
     background-color: seashell;
-    text-align: left;
+    /* text-align: left; */
 }
 main img{
     height: 100px;
+    width: 100%;
+    object-fit: cover;
 }
-#images-lined{
-    display: none;
+.images-lined{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    list-style: none;
+    text-align: center; 
 }
-img{
-    max-width: 100%;
-    height: auto;
+.image-lined li p, h6{
+    margin: 12px 0;
+}
+.images-lined img{
+    height: 50px;
+    overflow: scroll;
+}
+.article-image{
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 #lis1, #lis2, #lis3{

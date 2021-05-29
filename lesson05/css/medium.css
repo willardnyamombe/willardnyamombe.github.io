@@ -1,6 +1,10 @@
 @media only screen and (min-width: 34.5em) {
     body {
-        background-color: lightcoral;
+        background-color: white;
+        max-width: 800px;
+        margin: auto auto;
+        /* background-color: seashell; */
+        text-align: left;
     }
     
     nav{max-width: 100%;}
@@ -63,24 +67,17 @@
         align-self: stretch;
         padding: 0 155px 0 155px;
     }
-    img{
-        max-width: 100%;
-        height: auto;
-    }
-    #images-lined{
-        display: inline;
-        column-gap: 10px;
-    }
+    
     #lis1, #lis2, #lis3{
         display: none;
         column-gap: 20px;
     }
-    #paragraph{
+    /* #paragraph{
         display: flex;
     }
     #paragraph img{
         float: inline-end;
-    }
+    } */
     footer{
         display: grid;
         list-style: none;

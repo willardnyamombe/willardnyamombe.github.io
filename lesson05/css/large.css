@@ -1,4 +1,9 @@
 @media only screen and (min-width: 54.5em) {
+
+    body{
+        max-width: 800px;
+        margin: 0 auto;
+    }
     #navigation {
         width: 800px;
         margin: 16px auto;
@@ -34,13 +39,9 @@
         height: 200px;
     }
 
-    img{
-        max-width: 100%;
-        height: auto;
-    }
-    #images-lined{
-        display: inline;
-        column-gap: 10px;
+   
+    .images-lined{
+       
     }
     #lis1, #lis2, #lis3{
         display: none;

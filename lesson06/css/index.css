@@ -1,0 +1,71 @@
+.fullwidth {
+    width: 100%;
+    background-color: purple;
+    color: white;
+    padding: 10px;
+    border: 12px solid black;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+}
+.content {
+    position: relative;
+    width: 750px;
+    margin: 0 auto;/* move image to the center*/
+}
+.overlayfirst{
+    position: absolute;
+    width: 150px;
+    right:75%; /*this moves the text on top of the img or background*/
+    height:50px;
+    top: 3%;
+}
+.overlaysecond{
+    position: absolute;
+    width: 1px;
+    right:12%; /*this moves the text on top of the img or background*/
+    height:50px;
+    top: 3%;
+}
+.overlay {
+    position: absolute;
+    width: 190px;
+    right:65%; /*this moves the text on top of the img or background*/
+    height:50px;
+    top: 50%;
+    margin: 12px 0;
+    color: white;
+}
+.overlaypara {
+    position: absolute;
+    width: 500px;
+    left:10%; /*this moves the text on top of the img or background*/
+    height:50px;
+    top: 70%;
+    
+}
+h1{
+    font: bold;
+    color: white;
+    font-size: 80px;
+    /* padding-bottom: 0px; */
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    width: 400px;
+    color: white;
+    font-size: 25px;
+    margin: 0 0 2px;
+}
+.overlay-circle-img{
+    position: absolute;
+    display: flex;
+    width: 300px;
+    right:50%; /*this moves the text on top of the img or background*/
+    height:150px;
+    top: 85%;
+    object-fit: cover;
+}

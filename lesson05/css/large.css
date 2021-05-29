@@ -38,42 +38,55 @@
     main img{
         height: 200px;
     }
-
-   
     .images-lined{
-       
-    }
-    #lis1, #lis2, #lis3{
-        display: none;
-        column-gap: 20px;
-    }
-    #paragraph{
-        display: flex;
-    }
-    #paragraph img{
-        float: inline-end;
-    }
-    footer{
         display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        list-style: none;
+        text-align: center; 
+    }
+    .image-lined li p, h6{
+        margin: 12px 0;
+    }
+    .images-lined img{
+        height: 90px;
+        overflow: scroll;
+    }
+    .article-image {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* display: flex; */
+        /* flex-direction: column; */
+    }
+    .article-image img{
+        width: 100%;
+        margin: auto;
+        
+    }
+    .locationimage{
+        grid-column: 1/2;
+        grid-row: 1/3;
+        width: 100%;
+        height: auto;
+    }
+    #phone, #email, #location-icon{
+        display: flex;
+        align-items: center;
+    }
+    
+    footer{
+        
         list-style: none;
         /* display: flex; */
-        padding: 0;
-        grid-template-columns: repeat(2,auto);
         /* margin: auto auto; */
         background-color: lightcoral;
         text-align: center;
     }
 
-    #contact{
-        display:block;
-    }
-    #social-media,#location-icon{
-        display: block;
-    }
     footer p{
         justify-items: center;
-        background-color:seashell ;
-        grid-column: 3;
-        grid-row: 2;
+        text-align: center;
+        /* background-color:seashell ; */
+        grid-column: 1/3;
     }
+
 }

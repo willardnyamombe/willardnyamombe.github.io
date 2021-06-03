@@ -1,71 +1,214 @@
-.fullwidth {
-    width: 100%;
-    background-color: purple;
-    color: white;
-    padding: 10px;
-    border: 12px solid black;
-    box-sizing: border-box;
-    position: sticky;
-    top: 0;
-    z-index: 20;
+body {
+    background-color: white;
+    justify-content: space-around;
+    max-width: 100%;
+    margin: auto auto;
+    text-align: left;
 }
-.content {
-    position: relative;
-    width: 750px;
-    margin: 0 auto;/* move image to the center*/
-}
-.overlayfirst{
-    position: absolute;
-    width: 150px;
-    right:75%; /*this moves the text on top of the img or background*/
-    height:50px;
-    top: 3%;
-}
-.overlaysecond{
-    position: absolute;
-    width: 1px;
-    right:12%; /*this moves the text on top of the img or background*/
-    height:50px;
-    top: 3%;
-}
-.overlay {
-    position: absolute;
-    width: 190px;
-    right:65%; /*this moves the text on top of the img or background*/
-    height:50px;
-    top: 50%;
-    margin: 12px 0;
-    color: white;
-}
-.overlaypara {
-    position: absolute;
-    width: 500px;
-    left:10%; /*this moves the text on top of the img or background*/
-    height:50px;
-    top: 70%;
-    
-}
-h1{
-    font: bold;
-    color: white;
-    font-size: 80px;
-    /* padding-bottom: 0px; */
-    margin: 0;
-    padding: 0;
+nav{
+    margin: 0 auto;
+    max-width: 360px;
+    background-color: peachpuff;
+    font-family: Roboto, sans-serif;
 }
 
-p{
-    width: 400px;
-    color: white;
-    font-size: 25px;
-    margin: 0 0 2px;
+#navigation {
+    list-style: none;
+    padding: 0;
+    grid-template-columns: auto;
+    display: grid;
 }
-.overlay-circle-img{
-    position: absolute;
+/* turn on the first li */
+#navigation li:first-child {
+    display: block;
+}
+/* ignore all other li */
+#navigation li{
+    display: none;
+}
+#navigation a {
+    display: block;
+    padding: 0.75rem;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+#navigation a:hover, #navigation a.active:hover {
+    color: white;
+    background-color: black;
+}
+#navigation a.active{
+    background-color: rgba(0,0,0,.55);
+    color: white;
+
+}
+#navigation.responsive li{
+    display: block;
+}
+
+#header-content {
+    list-style: none;
     display: flex;
-    width: 300px;
-    right:50%; /*this moves the text on top of the img or background*/
-    height:150px;
-    top: 85%;
+    padding: 0;
+    /* grid-template-columns: repeat(3,auto); */
+    background-color: lightcoral;
+    /* text-align: center; */
+}
+ 
+header h1{
+    font-size: 15px;
+    margin: 25px 0 5px 0;
+    justify-items: center;
+}
+.ham {
+    margin: 35px 0 ;
+    place-items: space;
+    padding: 0 0 0 50px;
+    height: 30px;
+    width: 80px;
+}
+header p{
+    font-size: 10px;
+    margin: 5px 0;
+    font-style: italic;
+}
+/* header img{
+    width: 100px;
+    height:200px;
+} */
+
+main{
+    /* margin: block; */
+    max-width: 100%;
+    /* margin: 0 auto; */
+    background-color: seashell;
+    /* text-align: left; */
+    /* margin: 5px 0; */
+}
+main img{
+    width: 100%;
     object-fit: cover;
+}
+.images-lined{
+    display: none;
+}
+.image-lined li p, h6{
+    margin: 12px 0;
+}
+p, h1, h3{
+    margin: 10px;
+}
+
+.article-image img{
+    width: 100%;
+}
+.contactsec{
+   /* display: grid;
+   grid-template-columns: 1fr 1fr; */
+    background-color: seashell;
+    list-style: none;
+}
+
+footer{
+    background-color: lightcoral;
+    text-align: center;
+}
+#location-icon{
+    display: none;
+}
+#contactinfo{
+    display: block;
+    list-style: none;
+}
+.locationimage{
+    grid-column: 1/2;
+    grid-row: 1/3;
+    width: 100%;
+    height: auto;
+}
+
+#phone, #email{
+    display: flex;
+    align-items: center;
+}
+#social-media,#location-icon{
+    display: none;
+}
+#copyright{
+    display: auto;
+    text-align: center;
+}
+.pancakes{
+    margin: block;
+    max-width: 100%;
+    margin: auto auto;
+    background-color: seashell;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* popup */
+.popup .overlay {
+    position: fixed;
+    top:0px;
+    left: 0px;
+    width:100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.7);
+    z-index: 1;
+    display: none; /*be careful*/
+
+}
+
+.popup .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background:#fff;
+    width: 450px;
+    height: 250px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.popup .close-btn{
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    background: #222;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
+.popup.active .overlay {
+    display: block;
+}
+.popup.active .content {
+    transition: all 800ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+}
+section img{
+    width: 80px;
+    height: 80px;
 }

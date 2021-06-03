@@ -1,0 +1,103 @@
+@media only screen and (min-width: 54.5em) {
+
+    body{
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    #navigation {
+        width: 800px;
+        margin: 16px auto;
+    }
+    header img{
+        width: 100%;
+        height:auto;
+    }
+    
+    header h1{
+        font-size: 35px;
+        margin: 25px 0 5px 0;
+        justify-items: center;
+    }
+    header p{
+        font-size: 20px;
+        margin: 5px 0;
+        font-style: italic;
+    }
+    .ham{
+        display: none;
+    }
+    
+    main{
+        margin: block;
+        max-width: 1000px;
+        margin: auto auto;
+        background-color: seashell;
+        text-align: center;
+        align-content: center;
+        align-self: stretch;
+        padding: 0 155px 0 50px;
+    }
+    .wide-pic{
+        width: 900px;
+        position: relative;
+    }
+    .box-weather{
+        border: 5px solid red;
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        margin-top: -370px;
+
+    }
+    .images-lined{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        list-style: none;
+        text-align: center; 
+    }
+    .image-lined li p, h6{
+        margin: 12px 0;
+    }
+    .images-lined img{
+        height: 90px;
+        overflow: scroll;
+    }
+    .article-image {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* display: flex; */
+        /* flex-direction: column; */
+    }
+    .article-image img{
+        width: 100%;
+        margin: auto;
+        
+    }
+    .locationimage{
+        grid-column: 1/2;
+        grid-row: 1/3;
+        width: 100%;
+        height: auto;
+    }
+    #phone, #email, #location-icon{
+        display: flex;
+        align-items: center;
+    }
+    
+    footer{
+        
+        list-style: none;
+        /* display: flex; */
+        /* margin: auto auto; */
+        background-color: lightcoral;
+        text-align: center;
+    }
+
+    footer p{
+        justify-items: center;
+        text-align: center;
+        /* background-color:seashell ; */
+        grid-column: 1/3;
+    }
+
+}

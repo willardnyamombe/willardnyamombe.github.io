@@ -42,7 +42,8 @@
         position: relative;
     }
     .box-weather{
-        border: 5px solid red;
+        color: khaki;
+        /* border: 5px solid rgb(38, 0, 255); */
         width: 200px;
         height: 200px;
         position: absolute;

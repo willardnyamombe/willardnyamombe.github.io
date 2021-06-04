@@ -38,11 +38,12 @@
     }
     .overlay {
         position: absolute;
-        width: 190px;
-        right:65%; /*this moves the text on top of the img or background*/
+        max-width: 100%;
+        /* right:65%; this moves the text on top of the img or background */
         height:50px;
-        top: 50%;
+        top: 900px;
         margin:0 auto;
+        padding: 90px;
     }
     .overlaypara {
         position: absolute;

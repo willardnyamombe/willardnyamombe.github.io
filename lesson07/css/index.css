@@ -61,19 +61,25 @@ header h1{
     margin: 25px 0 5px 0;
     justify-items: center;
 }
-.ham a{
-
+/* .ham {
     margin: 35px 0 ;
     place-items: space;
-    padding: 30px 40px;
+    padding: 0 0 0 50px;
     height: 30px;
     width: 80px;
+} */
+.ham, a{
+
+    /* margin: 35px 0 ; */
+    place-items: space;
+    padding: 30px 40px;
+    /* height: 30px;
+    width: 80px; */
     background-color: transparent;
     border: none;
     font-size: 1.6rem;
     color: white;
-    /* justify-items: center; */
-    text-align: center;
+    justify-items: center;
 
 }
 header p{
@@ -95,23 +101,12 @@ main{
     /* margin: 5px 0; */
 }
 main img{
-    height: 100px;
     width: 100%;
     object-fit: cover;
 }
-.images-lined{
-    display: none;
-}
-.image-lined li p, h6{
-    margin: 12px 0;
-}
-p, h1, h3{
-    margin: 10px;
-}
 
-.article-image img{
-    width: 100%;
-}
+
+
 .contactsec{
    /* display: grid;
    grid-template-columns: 1fr 1fr; */
@@ -220,4 +215,9 @@ footer{
 section img{
     width: 80px;
     height: 80px;
+}
+
+/* // Gallery page */
+.images{
+    justify-items: center;
 }

@@ -1,13 +1,14 @@
 body {
-    background-color: white;
+    margin: 0;
+    /* background-color: white;
     justify-content: space-around;
     max-width: 100%;
-    margin: auto auto;
-    text-align: left;
+    margin: 0 auto;
+    text-align: left; */
 }
 nav{
     margin: 0 auto;
-    max-width: 360px;
+    /* max-width: 100%; */
     background-color: peachpuff;
     font-family: Roboto, sans-serif;
 }
@@ -61,13 +62,7 @@ header h1{
     margin: 25px 0 5px 0;
     justify-items: center;
 }
-/* .ham {
-    margin: 35px 0 ;
-    place-items: space;
-    padding: 0 0 0 50px;
-    height: 30px;
-    width: 80px;
-} */
+
 .ham, a{
 
     /* margin: 35px 0 ; */
@@ -92,30 +87,19 @@ header p{
     height:200px;
 } */
 
-main{
-    /* margin: block; */
-    max-width: 100%;
-    /* margin: 0 auto; */
-    background-color: seashell;
-    /* text-align: left; */
-    /* margin: 5px 0; */
-}
-main img{
-    width: 100%;
-    object-fit: cover;
-}
+
 
 
 
 .contactsec{
    /* display: grid;
    grid-template-columns: 1fr 1fr; */
-    background-color: seashell;
+    background-color: white;
     list-style: none;
 }
 
 footer{
-    background-color: lightcoral;
+    background-color: white;
     text-align: center;
 }
 #location-icon{
@@ -139,10 +123,25 @@ footer{
 #social-media,#location-icon{
     display: none;
 }
+
+
 #copyright{
+    padding: 15px;
     display: auto;
-    text-align: center;
+    background-color: lightcoral;
+    color: white;
 }
+
+
+
+
+
+
+
+
+
+
+
 .pancakes{
     margin: block;
     max-width: 100%;
@@ -150,19 +149,6 @@ footer{
     background-color: seashell;
     text-align: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* popup */
 .popup .overlay {
@@ -212,12 +198,32 @@ footer{
     transition: all 800ms ease-in-out;
     transform: translate(-50%, -50%) scale(1);
 }
-section img{
-    width: 80px;
-    height: 80px;
-}
 
 /* // Gallery page */
-.images{
-    justify-items: center;
+#gallery-container{
+    display: grid;
+    grid-template-columns: 90%;
+    justify-content: center;
+    grid-gap: 20px;
+}
+h1{
+    padding: 15px 0px 15px 5%;
+    margin: 0px;
+    font-size: 25px;
+}
+
+.gallery-card{
+    background-color: white;
+}
+div{
+    display: block;
+}
+.card-img{
+    max-width: 100%;
+}
+.contactsec img {
+    border-style: none;
+}
+.card-summary{
+    display: none;
 }

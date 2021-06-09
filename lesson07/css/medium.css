@@ -1,8 +1,8 @@
-@media only screen and (min-width: 34.5em) {
+@media only screen and (min-width: 47.5em) {
     body {
         background-color: white;
-        max-width: 100%;
-        margin: 0 auto;
+        /* max-width: 100%; */
+        margin: 0;
         /* background-color: seashell; */
         text-align: left;
     }
@@ -53,16 +53,7 @@
     .ham{
         display: none;
     }
-    main{
-        margin: block;
-        max-width: 100%;
-        margin: 0 auto;
-        background-color: seashell;
-    }
-    .wide-pic{
-        width: 600px;
-        position: relative;
-    }
+
     .box-weather{
         /* border: 5px solid red; */
         width: 200px;
@@ -73,28 +64,25 @@
 
     }
 
-    .images{
-        width: 100%;
+    /* main */
+    .gallery-container{
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        justify-items: center;
+        grid-template-columns: 45% 45%;
+        justify-content: center;
+        grid-gap: 20px;
     }
-    .contactsec{
-        display: grid;
-        list-style: none;
-        grid-template-columns: 1fr 1fr;
-        background-color: lightcoral;
-        /* text-align: center; */
+    .location-icon{
+        display: block;
+        padding-right: 20px;
     }
-    .locationimage{
-        grid-column: 1/2;
-        grid-row: 1/3;
-        width: 100%;
-        height: auto;
+    #info-icon{
+        width: 20px;
     }
-    #phone, #email, #location-icon{
-        display: flex;
-        align-items: center;
+    #locationimage-large{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
     }
     footer p{
         justify-items: center;

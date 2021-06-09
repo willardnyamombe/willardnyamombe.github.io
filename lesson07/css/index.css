@@ -94,6 +94,7 @@ h1{
 .gallery-card{
     background-color: white;
 }
+.gallery-card:hover {box-shadow: 0 0 50px #333;}
 div{
     display: block;
 }

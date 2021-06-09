@@ -80,12 +80,10 @@
         display: inline;
         width: 40px;
         padding: 15px 10px;
+        
     } 
     #email{
         display: block;
-    }
-    #facebook-icon{
-
     }
     
     #contactinfo a{

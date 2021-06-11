@@ -1,10 +1,17 @@
 body {
+    max-width: 100%;
+    background-color: seashell;
+    justify-content: space-around;
     margin: 0 auto;
-   /* display: block; */
+}
+#content {
+    background-color: white;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 nav{
     margin: 0 auto;
-    /* max-width: 100%; */
+    max-width: 360px;
     background-color: peachpuff;
     font-family: Roboto, sans-serif;
 }
@@ -12,7 +19,6 @@ nav{
 #navigation {
     list-style: none;
     padding: 0;
-    grid-template-columns: auto;
     display: grid;
 }
 /* turn on the first li */
@@ -31,7 +37,7 @@ nav{
     color: black;
     font-weight: 700;
 }
-#navigation a:hover, #navigation a.active:hover {
+#navigation a:hover, a.active:hover {
     color: white;
     background-color: black;
 }
@@ -43,7 +49,6 @@ nav{
 #navigation.responsive li{
     display: block;
 }
-
 #header-content {
     list-style: none;
     display: flex;

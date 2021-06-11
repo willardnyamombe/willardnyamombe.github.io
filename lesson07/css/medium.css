@@ -1,10 +1,7 @@
 @media only screen and (min-width: 34.5em) {
     body {
-        background-color: white;
-        /* max-width: 100%; */
-        margin: 0 auto;
-        /* background-color: seashell; */
-        text-align: left;
+        background-color: seashell;
+        max-width: 80%;
     }
     
     nav{max-width: 100%;}

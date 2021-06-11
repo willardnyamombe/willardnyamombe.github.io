@@ -9,4 +9,9 @@ window.addEventListener('load', () => {
         // window.onresize = () {if (window.innerWidth > 760) mainnav.classList.remove('responsive')};
 
         // you can also put lines 2,3 5,6 into your HTML under the body and inside the script tag
+
+        // enables hamburger menu
+function toggleMenu() {
+    document.getElementById("navigation").classList.toggle("hide");
+}
 });

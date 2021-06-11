@@ -1,10 +1,7 @@
 @media only screen and (min-width: 34.5em) {
     body {
-        background-color: white;
-        /* max-width: 100%; */
-        margin: 0 auto;
-        /* background-color: seashell; */
-        text-align: left;
+        background-color: seashell;
+        max-width: 80%;
     }
     
     nav{max-width: 100%;}
@@ -66,11 +63,8 @@
 
     /* main */
     .form-container{
-        display: grid;
-        grid-template-columns: 45%;
         justify-content: center;
         margin: 0 auto;
-        max-width: 820px;
     }
 
 

@@ -1,6 +1,14 @@
 body {
+    max-width: 100%;
+    background-color: seashell;
+    justify-content: space-around;
     margin: 0 auto;
-   /* display: block; */
+}
+
+#content {
+    background-color: white;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 nav{
     margin: 0 auto;

@@ -1,6 +1,14 @@
 body {
+    max-width: 100%;
     background-color: seashell;
     justify-content: space-around;
+    margin: 0 auto;
+}
+
+#content {
+    background-color: white;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 nav{
     margin: 0 auto;
@@ -79,7 +87,7 @@ main{
     margin: block;
     max-width: 100%;
     margin: auto auto;
-    background-color: seashell;
+    background-color: white;
     text-align: left;
 }
 main img{

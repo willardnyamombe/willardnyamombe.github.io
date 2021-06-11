@@ -1,11 +1,17 @@
-@media only screen and (min-width: 54.5em) {
-
+@media only screen and (min-width: 63.5em) {
     body{
-    
+        background-color: seashell;
+    }
+    #content {
+        background-color: white;
+        max-width: 1400px;
+        margin: 0 auto;
     }
     #navigation {
-        width: 800px;
+        max-width: 90%;
         margin: 16px auto;
+    }
+    #navigation {
     }
     header img{
         width: 100%;
@@ -26,9 +32,8 @@
         display: none;
     }
     /* main */
-    .gallery-container{
+    .form-container{
         display: grid;
-        grid-template-columns: 30%;
         justify-content: center;
     }
     .card-summary{

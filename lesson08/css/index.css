@@ -79,7 +79,8 @@ header p{
     font-style: italic;
 }
 /* // Gallery page */
-.gallery-container{
+.form-container{
+   
     display: grid;
     grid-template-columns: 90%;
     justify-content: center;

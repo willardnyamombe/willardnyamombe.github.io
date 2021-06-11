@@ -65,14 +65,15 @@
     }
 
     /* main */
-    .gallery-container{
+    .form-container{
         display: grid;
-        grid-template-columns: 45% 45%;
+        grid-template-columns: 45%;
         justify-content: center;
         margin: 0 auto;
-        grid-gap: 20px;
         max-width: 820px;
     }
+
+
     .header-name{
         max-width: 820px;
         margin: 0 auto;

@@ -28,9 +28,8 @@
     /* main */
     .gallery-container{
         display: grid;
-        grid-template-columns: 30% 30% 30%;
+        grid-template-columns: 30%;
         justify-content: center;
-        grid-gap: 20px;
     }
     .card-summary{
         display: block;

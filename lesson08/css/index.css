@@ -83,14 +83,52 @@ header p{
     margin: 5px 0;
     font-style: italic;
 }
-/* // Gallery page */
-.form-container{
-   
-    display: grid;
-    grid-template-columns: 90%;
-    justify-content: center;
-    grid-gap: 20px;
+.header-name{
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-style: italic;
+
 }
+/* form CSS */
+label {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: -5px;
+    padding: 10px;
+    font-style: italic;
+}
+form{
+    font-family: Roboto, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+#radio2{
+    font-size: 20px;
+    display: inline-block;
+    margin-bottom: 0px;
+    padding: 10px;
+}
+input, #stormregion{
+    height: 40px;
+}
+#submit{
+    color: white;
+    justify-content: left;
+    width: 90px;
+    background-color: #008CBA;
+    border-color: transparent;
+}
+
+
+
+
+
+
+
+
+/* // Gallery page */
+
 
 .gallery-card{
     background-color: white;

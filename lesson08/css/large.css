@@ -32,10 +32,7 @@
         display: none;
     }
     /* main */
-    .form-container{
-        display: grid;
-        justify-content: center;
-    }
+
     .card-summary{
         display: block;
         padding: 8px 10px;

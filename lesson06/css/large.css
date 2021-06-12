@@ -1,9 +1,10 @@
-@media only screen and (min-width: 54.5em) {
+@media only screen and (min-width: 63.5em) {
 
     body{
         max-width: 1000px;
         margin: 0 auto;
     }
+    
     #navigation {
         width: 800px;
         margin: 16px auto;
@@ -31,7 +32,7 @@
         margin: block;
         max-width: 1000px;
         margin: auto auto;
-        background-color: seashell;
+        background-color: white;
         text-align: center;
         align-content: center;
         align-self: stretch;
@@ -42,14 +43,18 @@
         position: relative;
     }
     .box-weather{
+        
         color: khaki;
         /* border: 5px solid rgb(38, 0, 255); */
         width: 200px;
         height: 200px;
         position: absolute;
         margin-top: -370px;
+        background-color: rgba(8, 94, 54, 0.9);
+        padding: 25px;
 
     }
+    
     .images-lined{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;

@@ -97,7 +97,7 @@ label {
     padding: 10px;
     font-style: italic;
 }
-form{
+form{background-color: seashell;
     font-family: Roboto, sans-serif;
     display: flex;
     flex-direction: column;

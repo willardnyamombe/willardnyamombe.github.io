@@ -109,15 +109,21 @@ form{
     margin-bottom: 0px;
     padding: 10px;
 }
-input, #stormregion{
+input{
     height: 40px;
 }
-#submit{
+/* #submit a:link{
+    text-decoration: none;
+} */
+#submit {
     color: white;
     justify-content: left;
     width: 90px;
+    height: 40px;
     background-color: #008CBA;
     border-color: transparent;
+    /* list-style: none; */
+    
 }
 
 

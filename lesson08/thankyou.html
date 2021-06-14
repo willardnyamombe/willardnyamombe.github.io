@@ -7,22 +7,29 @@
     <title>Document</title>
     <link rel="stylesheet" href="popup.css">
     <link rel="stylesheet" href="normalize.css">
+    <style>
+        body{
+            margin: auto;
+        width: 50%;
+        margin-top: 10%;
+        }
+    h2, p{
+        font-style: italic;
+    }
+    .message {
+        background-color: rgb(247, 247, 184);
+        font-size: 20px;
+    line-height: 28px;
+    font-weight: 300;
+        padding: 10px;
+    }
+    </style>
 </head>
 <body>
-    <section>
-        <div class="popup" id="popup-1">
-        <div class="overlay"></div>
-        <div class="content">
-        <div class="close-btn" onclick="togglePopup()">&times;</div>
-        <h1>Saturday Pancakes</h1>
-        <img src="pancake.png" alt="pancake">
-        <p> "Saturday = Preston Pancakes in the Park!  9:00 a.m. 
-            Saturday at the city park pavilion."</p>
-        </div>
-        </div>
-        <!-- <button onclick="togglePopup()">Checkout The Saturday Pancakes</button> -->
-    </section>
-        <script src="popup.js"></script> 
+    <div class="message">
+        <h2>Thank you for contacting us.</h2>
+        <p>You are very important to us, we will contact you as soon as we review your message.</p>
+    </div>
 </body>
 
 </html>

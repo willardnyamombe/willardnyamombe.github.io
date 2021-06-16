@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fake ID</title>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+          justify-content: center;
+        font-family: "Lato", sans-serif;
+        background: url(blank-id.jpeg)
+          no-repeat;
+      }
+      .topstuff {
+        display: grid;
+        grid-template-columns: 235px;
+      }
+      h1 {
+        font-family: "Inconsolata", monospace;
+      }
+      .wrapper {
+          display: grid;
+        grid-template-columns:repeat(1, 1fr);
+        font-family: "Inconsolata", monospace;
+        margin-top: 3.5em;
+        margin-left: 19.5em;
+        line-height: 2em;
+        font-size: 1.1em;
+      }
+     
+    </style>
+  </head>
+
+  <body>
+    <div class="topstuff">
+      <h1>Fake IDs <i>Unleashed</i></h1>
+      <p>
+        Welcome to Fake IDs Unleashed! tired of being you? Want to ride all the
+        rides you can't? Just hit the button until you find someone you want to
+        be!
+      </p>
+      <!-- <input type="button" value="Click it here for a new ID" onclick="getInfo()"> -->
+      <button id="button" onclick="getInfo(); getImg()">Click it here for a new ID</button>
+    </div>
+    <div class="wrapper">
+      <div>Full Name: <span id="fullName"></span></div>
+      <div>Password: <span id="password"></span></div>
+      <div>Email Address: <span id="email"></span></div>
+      <div>City, Country: <span id="cityCountry"></span></div>
+      <div>How Many Children: <span id="children"></span></div>
+      <div>IP Address: <span id="ip"></span></div>
+      <div>
+        <img src="" id="picture" width="270" />
+      </div>
+    </div>
+
+    <script>
+      const url = "https://www.ahfx.com/person.php";
+      const image_url = "https://thispersondoesnotexist.com/image";
+
+      async function getInfo() {
+        const response = await fetch(url);
+        const data = await response.json();
+
+        /*console.log(data.person);*/
+        const { person } = data;
+
+        document.getElementById("fullName").textContent =
+          person["personal"]["name"] + " " + person["personal"]["last_name"];
+        document.getElementById("password").textContent =
+          person["online_info"]["password"];
+        document.getElementById("email").textContent =
+          person["online_info"]["email"];
+        document.getElementById("picture").setAttribute('src', image_url);
+        document.getElementById("cityCountry").textContent =
+          person["personal"]["city"] + ", " + person["personal"]["country"];
+        document.getElementById("children").textContent =
+          person["marriage"]["children"];
+        document.getElementById("ip").textContent =
+          person["online_info"]["ip_address"];
+      }
+
+    //   var button = document.getElementById("button")
+    //   button.addEventListener('click', function(event){
+    //       document.getElementById("picture").src = image_url;
+    //   })
+    //.setAttribute('src', prophets[i].imageurl);
+    //   async function getImg(){
+    //     document.getElementById("picture").src = image_url;
+    //   }
+    //   function clickIt(){
+    //     getImg();
+    //     getInfo();
+    //   }
+      
+    </script>
+  </body>
+</html>

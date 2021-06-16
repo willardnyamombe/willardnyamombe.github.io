@@ -15,9 +15,10 @@
       body {
           justify-content: center;
         font-family: "Lato", sans-serif;
-        background: url(blank-id.jpeg)
-          no-repeat;
+        
+         
       }
+
       .topstuff {
         display: grid;
         grid-template-columns: 235px;
@@ -25,12 +26,20 @@
       h1 {
         font-family: "Inconsolata", monospace;
       }
+      #backimage{
+        border: 2px solid black;
+  padding: 25px;
+  background: url(blank-id.jpeg)
+          no-repeat;
+  background-repeat: no-repeat;
+  background-size: auto;
+      }
       .wrapper {
           display: grid;
         grid-template-columns:repeat(1, 1fr);
         font-family: "Inconsolata", monospace;
-        margin-top: 2em;
-        margin-left: 19.5em;
+        margin-top: 1em;
+        margin-left: 18.5em;
         line-height: 2em;
         font-size: 1.1em;
       }
@@ -39,28 +48,32 @@
   </head>
 
   <body>
-    <div class="topstuff">
-      <h1>Fake IDs <i>Unleashed</i></h1>
-      <p>
-        Welcome to Fake IDs Unleashed! tired of being you? Want to ride all the
-        rides you can't? Just hit the button until you find someone you want to
-        be!
-        Be sure to refresh the page and then click the button for a new ID.
-      </p>
-      <!-- <input type="button" value="Click it here for a new ID" onclick="getInfo()"> -->
-      <button id="button" onclick="getInfo(); getImg()">Click for a new ID</button>
-    </div>
-    <div class="wrapper">
-      <div>Full Name: <span id="fullName"></span></div>
-      <div>Password: <span id="password"></span></div>
-      <div>Email Address: <span id="email"></span></div>
-      <div>City, Country: <span id="cityCountry"></span></div>
-      <div>How Many Children: <span id="children"></span></div>
-      <div>IP Address: <span id="ip"></span></div>
-      <div>
-        <img src="" id="picture" width="270" />
-      </div>
-    </div>
+      <main id=backimage>
+        <div class="topstuff">
+            <h1>Fake IDs <i>Unleashed</i></h1>
+            <p>
+              Welcome to Fake IDs Unleashed! tired of being you? Want to ride all the
+              rides you can't? Just hit the button until you find someone you want to
+              be!
+              Be sure to refresh the page and then click the button for a new ID.
+            </p>
+            <!-- <input type="button" value="Click it here for a new ID" onclick="getInfo()"> -->
+            <button id="button" onclick="getInfo(); getImg()">Click for a new ID</button>
+          </div>
+          <div class="wrapper">
+            <div>Full Name: <span id="fullName"></span></div>
+            <div>Password: <span id="password"></span></div>
+            <div>Email Address: <span id="email"></span></div>
+            <div>City, Country: <span id="cityCountry"></span></div>
+            <div>How Many Children: <span id="children"></span></div>
+            <div>IP Address: <span id="ip"></span></div>
+            <div >
+              <img src="" id="picture" width="270" />
+            </div>
+          </div>
+
+      </main>
+   
 
     <script>
       const url = "https://www.ahfx.com/person.php";

@@ -18,6 +18,16 @@
         
          
       }
+      main{
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: repeat(2, 1fr);
+          margin: auto;
+          margin-top: 25px;
+          width: 600px;
+          height: 400px;
+          color: #c41a1acc;
+      }
 
       .topstuff {
         display: grid;
@@ -36,12 +46,12 @@
       }
       .wrapper {
           display: grid;
-        grid-template-columns:repeat(1, 1fr);
+        grid-template-columns:250px;
         font-family: "Inconsolata", monospace;
-        margin-top: 1em;
+        /* margin-top: 1em;
         margin-left: 18.5em;
         line-height: 2em;
-        font-size: 1.1em;
+        font-size: 1.1em; */
       }
      
     </style>
@@ -55,7 +65,6 @@
               Welcome to Fake IDs Unleashed! tired of being you? Want to ride all the
               rides you can't? Just hit the button until you find someone you want to
               be!
-              Be sure to refresh the page and then click the button for a new ID.
             </p>
             <!-- <input type="button" value="Click it here for a new ID" onclick="getInfo()"> -->
             <button id="button" onclick="getInfo()">Click for a new ID</button>
@@ -73,51 +82,33 @@
           </div>
 
       </main>
-   
-
-    <script>
-      const url = "https://www.ahfx.com/person.php";
-      const image_url = "https://thispersondoesnotexist.com/image";
-
-      async function getInfo() {
-        const response = await fetch(url);
-        const data = await response.json();
-
-        /*console.log(data.person);*/
-        const { person } = data;
-
-        document.getElementById("fullName").textContent =
-          person["personal"]["name"] + " " + person["personal"]["last_name"];
-        document.getElementById("password").textContent =
-          person["online_info"]["password"];
-        document.getElementById("email").textContent =
-          person["online_info"]["email"];
-        document.getElementById("picture").setAttribute('src', image_url);
-        document.getElementById("cityCountry").textContent =
-          person["personal"]["city"] + ", " + person["personal"]["country"];
-        document.getElementById("children").textContent =
-          person["marriage"]["children"];
-        document.getElementById("ip").textContent =
-          person["online_info"]["ip_address"];
-      }
-
-    //   function getInfo() {
-    //     location.reload()
-    //  }
-
-    //   var button = document.getElementById("button")
-    //   button.addEventListener('click', function(event){
-    //       document.getElementById("picture").src = image_url;
-    //   })
-    //.setAttribute('src', prophets[i].imageurl);
-    //   async function getImg(){
-    //     document.getElementById("picture").src = image_url;
-    //   }
-    //   function clickIt(){
-    //     getImg();
-    //     getInfo();
-    //   }
+<script>
       
-    </script>
-  </body>
-</html>
+    function getInfo() {
+        location.reload()
+     }
+     const url = "https://www.ahfx.com/person.php";
+     const image_url = "https://thispersondoesnotexist.com/image";
+
+     fetch(url).then(function (response){
+         return response.json();
+     }).then(function (jsonObject){
+         console.table(jsonObject);
+         const person = jsonObject['person'];
+         console.log(person);
+         document.getElementById("children").textContent = person["marriage"]["children"];
+         document.getElementById("fullName").textContent =
+       person["personal"]["name"] + " " + person["personal"]["last_name"];
+     document.getElementById("password").textContent =
+       person["online_info"]["password"];
+     document.getElementById("email").textContent =
+       person["online_info"]["email"];
+       document.getElementById("cityCountry").textContent =
+       person["personal"]["city"] + ", " + person["personal"]["country"];
+       document.getElementById("ip").textContent =
+       person["online_info"]["ip_address"];
+     })
+     document.getElementById("picture").setAttribute('src', image_url);      
+ </script>
+ </body>
+ </html>

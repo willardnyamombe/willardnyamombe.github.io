@@ -1,0 +1,256 @@
+body {
+    background-color: seashell;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+#content {
+    background-color: white;
+    margin: 0 auto;
+}
+nav{
+    margin: 0 auto;
+    background-color: peachpuff;
+    font-family: Roboto, sans-serif;
+}
+
+#navigation {
+    list-style: none;
+    padding: 0;
+    display: grid;
+}
+/* turn on the first li */
+#navigation li:first-child {
+    display: block;
+}
+/* ignore all other li */
+#navigation li{
+    display: none;
+}
+#navigation a {
+    display: block;
+    padding: 0.75rem;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+#navigation a:hover, a.active:hover {
+    color: white;
+    background-color: black;
+}
+#navigation a.active{
+    background-color: rgba(0,0,0,.55);
+    color: white;
+
+}
+#navigation.responsive li{
+    display: block;
+}
+#header-content {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    /* grid-template-columns: repeat(3,auto); */
+    background-color: lightcoral;
+    /* text-align: center; */
+}
+ 
+header h1{
+    font-size: 15px;
+    margin: 25px 0 5px 0;
+    justify-items: center;
+}
+
+.ham, a{
+
+    /* margin: 35px 0 ; */
+    place-items: space;
+    padding: 30px 40px;
+    /* height: 30px;
+    width: 80px; */
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: white;
+    justify-items: center;
+
+}
+header p{
+    font-size: 10px;
+    margin: 5px 0;
+    font-style: italic;
+}
+.header-name{
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-style: italic;
+
+}
+/* cards CSS */
+main{
+    display: grid;
+    background-color: grey;
+    
+
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+ background-color:greenyellow;
+ margin: 20px;
+}
+text{
+    grid-column: 1/2;
+}
+text-img{
+    grid-column: 2/3;
+}
+/* // Gallery page */
+
+
+.gallery-card{
+    background-color: white;
+}
+.gallery-card:hover {box-shadow: 0 0 50px #333;}
+div{
+    display: block;
+}
+.card-img{
+    max-width: 100%;
+}
+.contactsec img {
+    border-style: none;
+}
+.card-summary{
+    display: none;
+}
+
+
+/* footer */
+#contactsec{
+    padding: 0px 15px;
+}
+#contactinfo h4{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin: 0px;
+    font-family: Roboto, sans-serif;
+}
+#locationimage-small{
+    display: none;
+}
+h4 {
+    margin: 0px;
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+#locationimage-large{
+    padding-top: 10px;
+    padding-bottom: 15px;
+    width: 100%;
+}
+.location-icon{
+    display: none;
+}
+.social-media{
+    display: none;
+}
+#copyright{
+    background-color: white;
+    text-align: center;
+}
+
+#contactinfo{
+    display: block;
+}
+
+.phone{
+    display: block; 
+}
+#info-icon{
+    width: 20px;
+}
+#social-media{
+    display: none;
+}
+
+
+#copyright{
+    padding: 15px;
+    display: auto;
+    background-color: lightcoral;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+.pancakes{
+    margin: block;
+    max-width: 100%;
+    margin: auto auto;
+    background-color: seashell;
+    text-align: center;
+}
+
+/* popup */
+.popup .overlay {
+    position: fixed;
+    top:0px;
+    left: 0px;
+    width:100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.7);
+    z-index: 1;
+    display: none; /*be careful*/
+
+}
+
+.popup .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background:#fff;
+    width: 450px;
+    height: 250px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.popup .close-btn{
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    background: #222;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
+.popup.active .overlay {
+    display: block;
+}
+.popup.active .content {
+    transition: all 800ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+}
+

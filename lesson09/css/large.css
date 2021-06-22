@@ -30,16 +30,20 @@
         display: none;
     }
     /* main */
-
+main{
+    margin: 0 auto;
+}
     .cards{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
      /* background-color:greenyellow; */
      margin: 20px;
+     
     }
     .cards section{
         display: block;
         grid-template-columns: 1fr;
+        padding: 20px;
     }
     .cards img{
         width:150px;

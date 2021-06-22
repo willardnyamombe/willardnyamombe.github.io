@@ -90,20 +90,8 @@
 
     }
 
-
-   /* .cards section text:nth-child(2){
-        width: 80%;
-        grid-column: 1/2;
-    }
-    
-    .cards section img:nth-child(2){
-        background-color: hotpink;
-        grid-column: 2/3;
-    } */
-
     
     .header-name{
-        /* max-width: 820px; */
         margin: 0 auto;
     }
     .location-icon{

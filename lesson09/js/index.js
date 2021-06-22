@@ -63,11 +63,11 @@ fetch(requestURL)
                 // }
 
 
-      card.appendChild(h1);
-      card.appendChild(span);
-      card.appendChild(p);
-      card.appendChild(p1);
-      card.appendChild(p2);
+      text.appendChild(h1);
+      text.appendChild(span);
+      text.appendChild(p);
+      text.appendChild(p1);
+      text.appendChild(p2);
 
       card.appendChild(text);
       card.appendChild(image);

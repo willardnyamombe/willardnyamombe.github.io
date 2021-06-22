@@ -61,7 +61,46 @@
 
     }
 
-    /* main */
+    /* main card CSS */
+    /* main{
+        display: grid;
+        background-color: grey;
+        
+    
+    } */
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+     /* background-color:greenyellow; */
+     margin: 20px;
+    }
+    .cards section{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .cards section:nth-of-type(2) div {
+        grid-column: 2/3;
+
+    }
+    .cards section:nth-of-type(2) img {
+        grid-row: 1/2;
+        grid-column: 1/2;
+
+    }
+
+
+   /* .cards section text:nth-child(2){
+        width: 80%;
+        grid-column: 1/2;
+    }
+    
+    .cards section img:nth-child(2){
+        background-color: hotpink;
+        grid-column: 2/3;
+    } */
+
     
     .header-name{
         /* max-width: 820px; */

@@ -1,14 +1,12 @@
-@media only screen and (min-width: 63.5em) {
+@media only screen and (min-width: 54.5em) {
     body{
         background-color: seashell;
     }
     #content {
         background-color: white;
-        /* max-width: 1400px; */
         margin: 0 auto;
     }
     #navigation {
-        /* max-width: 90%; */
         margin: 16px auto;
     }
     #navigation {
@@ -33,7 +31,21 @@
     }
     /* main */
 
-
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+     /* background-color:greenyellow; */
+     margin: 20px;
+    }
+    .cards section{
+        display: block;
+        grid-template-columns: 1fr;
+    }
+    .cards img{
+        width:150px;
+        grid-row:2/3;
+    }
+    
 
 
 

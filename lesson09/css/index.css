@@ -86,7 +86,7 @@ header p{
     font-style: italic;
 
 }
-/* cards CSS */
+/* preston, fish haven, soda spring cards CSS */
 main{
     display: grid;
     background-color: grey;
@@ -101,6 +101,11 @@ main{
  /* background-color:greenyellow; */
  text-align: center;
  margin: 20px;
+ gap: 2em;
+
+}
+.cards section{
+    background-color: pink;
 }
 text{
     grid-column: 1/2;
@@ -108,8 +113,10 @@ text{
 }
 .cards img{
     width:150px;
-    align-items: baseline;
+    align-items: center;
 }
+
+.cards section h1
 /* // Gallery page */
 
 

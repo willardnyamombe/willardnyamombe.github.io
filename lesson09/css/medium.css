@@ -73,6 +73,12 @@
         grid-template-columns: repeat(1, 1fr);
      /* background-color:greenyellow; */
      margin: 20px;
+     
+    }
+    .cards img {
+        width: 280px;
+        justify-self: center;
+        align-self: center;
     }
     .cards section{
         display: grid;

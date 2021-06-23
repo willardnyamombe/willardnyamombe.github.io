@@ -48,6 +48,7 @@ main{
     .cards img{
         width:150px;
         grid-row:2/3;
+        align-self: end;
     }
     
 

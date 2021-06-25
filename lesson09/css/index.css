@@ -89,7 +89,7 @@ header p{
 /* preston, fish haven, soda spring cards CSS */
 main{
     display: grid;
-    background-color: grey;
+    background-color: white;
     
 
 }
@@ -112,11 +112,13 @@ text{
     padding-bottom: 0px;
 }
 .cards img{
-    width:150px;
+    max-width:100%;
     align-items: center;
 }
 
-.cards section h1
+.cards section h1{
+
+}
 /* // Gallery page */
 
 
@@ -136,6 +138,26 @@ div{
 .card-summary{
     display: none;
 }
+.cards section h1{
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bolder;
+        font-size: 30px;
+        color: darkblue;
+        text-shadow: 2px 1px rgb(139, 177, 235);
+    }
+    .cards section span{
+        font-family: sans;
+        font-weight: bolder;
+        color: rgb(5, 5, 48);
+        text-shadow: 1px 0.2px rgb(139, 177, 235);
+    }
+    .cards section p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: lighter;
+        font-size: 5vw;
+        color: rgb(5, 5, 48);
+        text-shadow: 1px .5px rgb(139, 177, 235);
+    }
 
 
 /* footer */

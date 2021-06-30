@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Storm Center</title>
-    <link rel="stylesheet" href="popup.css">
+    <link rel="stylesheet" href="popup.css" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/medium.css" />
@@ -41,107 +41,82 @@
       <nav>
         <ul id="navigation">
           <li>
-            <a href="lesson04/preston-index.html">Home</a>
+            <a href="https://willardnyamombe.github.io/lesson09/index.html">Home</a>
+          </li>
+          <li>
+            <a href="lesson10/preston-10.html" class="active"
+              >Preston</a
+            >
           </li>
           <li><a href="#">Soda Spring</a></li>
           <li><a href="#">Fish Haven</a></li>
           <li>
-            <a href="https://willardnyamombe.github.io/lesson08/stormcenter.html" class="active">Storm Center</a>
+            <a href="https://willardnyamombe.github.io/lesson08/stormcenter.html">Storm Center</a>
           </li>
           <li>
             <a id="gallery-link" href="lesson07/preston-7.html">Gallery</a>
           </li>
         </ul>
       </nav>
-
-      <h1 class="header-name">Storm Center</h1>
-
-      <form class="form-container">
-
-        <label for="fullname">Full Name:</label>
-        <input
-          type="text"
-          id="fullname"
-          name="fullname"
-          pattern="[A-Za-z].{5,}"
-          required
-        />
-
-        <label for="email">Email Address:</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="johndoe@email.com"
-          required
-        />
-
-        <label for="phone">Phone Number:</label>
-        <input
-          type="tel"
-          id="phone"
-          name="phone"
-          placeholder="123-145-678"
-          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-          required
-        />
-
-        <label for="zipcode">Zip code:</label>
-        <input type="number" id="zipcode" required />
-
-        <label for="stormdate">Storm Date:</label>
-        <input type="date" id="date" />
-
-        <label for="stormtype">Storm Type:</label>
-        <input list="stormtypes" />
-        <datalist id="stormtypes">
-          <option value="Flash flood"></option>
-          <option value="Hail"></option>
-          <option value="Hurricane"></option>
-          <option value="Thunderstorm"></option>
-          <option value="Tornado"></option>
-        </datalist>
-
-        <label class="flexly" for="rating"
-          >Storm Severity:&nbsp;&nbsp;&nbsp;</label
-        >
-        <input
-          type="range"
-          id="rating"
-          value="10"
-          min="1"
-          max="10"
-          step="1"
-          list="tickmarks"
-          oninput="adjustRating(this.value)"
-          onchange="adjustRating(this.value)"
-        />
-        <span id="ratingvalue"></span>
-
-        <label for="stormregion">Storm Region:</label>
-        <select name="stormregion" id="stormregion">
-          <option value=" " disabled selected>Select Region</option>
-          <option value="preston">Preston</option>
-          <option value="sodaspring">Soda Springs</option>
-          <option value="fishhaven">Fish Haven</option>
-        </select>
-
-        <div id="radio2">
-          <p>User in-danger level:</p>
-          <input type="radio" id="yes" name="yes" value="yes" />
-          <label for="yes">Yes</label><br />
-          <input type="radio" id="maybe" name="maybe" value="maybe" />
-          <label for="maybe">Maybe</label><br />
-          <input type="radio" id="no" name="no" value="no" />
-          <label for="no">No</label>
-        </div>
-
-        <label for="comments">Comments:</label>
-        <textarea name="comments" id="comments" cols="30" rows="10"></textarea
-        ><br />
-        <!-- <button id="submit" type="submit" value="Submit">Submit</button> -->
-        <button id="submit" type="submit" value="Submit"><a href="https://willardnyamombe.github.io/lesson08/thankyou.html">Submit</a></button>
-      </form>
+      <main>
+        <main>
+          <h1>Preston Idaho</h1>
+          <img src="https://source.unsplash.com/CDu0x1Aiils" alt="Placeholder" />
+          <div>
+              <h3>Weather Summary</h3>
+              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore  magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                 
+             </p>
+      
+          </div>
+           
+              
+          <h3>Five day forecast</h3>
+          <ul class="images-lined">
+              <li>
+                  <h6>Mon</h6>
+                  <img src="images/iconfinder_stock_weather-night-few-clouds_29220.png" alt="img">
+                  <p>Temp: 24&deg;</p>
+              </li>
+              <li>
+                  <h6>Tue</h6>
+                  <img src="images/iconfinder_stock_weather-night-few-clouds_29220.png" alt="img">
+                  <p>Temp: 15&deg;</p>
+              </li>
+              <li>
+                  <h6>Wed</h6>
+                  <img src="images/iconfinder_stock_weather-night-few-clouds_29220.png" alt="img">
+                  <p>Temp: 34&deg;</p>
+              </li>
+              <li>
+                  <h6>Thur</h6>
+                  <img src="images/iconfinder_stock_weather-night-few-clouds_29220.png" alt="img">
+                  <p>Temp: 5&deg;</p>
+              </li>
+              <li>
+                  <h6>Fri</h6>
+                  <img src="images/iconfinder_stock_weather-night-few-clouds_29220.png" alt="img">
+                  <p>Temp: -3&deg;</p>
+              </li>
+          </ul>
+          <section >
+              <h3>Article Title</h3>
+              <div class="article-image">
+                  <p id="paragraph"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore  magna aliqua.
+                      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                 </p>
+                 <img src="images/iconfinder_stock_weather-night-few-clouds_29220.png" alt="image">
+              </div>
+              
+          </section>
+      </main>
+  
+      </main>
 
       <footer>
         <section id="contactsec">

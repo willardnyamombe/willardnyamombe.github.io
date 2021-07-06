@@ -1,0 +1,100 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Arial',Arial, Helvetica, sans-serif;
+
+}
+main {
+    max-width: 700px;
+    margin: 0 auto;
+}
+.bigGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1em;
+    row-gap: 1em;
+
+}
+
+.bigGrid .card1, .card2, .card3, .card4, .card5 {
+    background-image: url(https://source.unsplash.com/random/600x600/?sunny);
+    padding:.5em;
+}
+.bigGrid .card2 {
+    background-image: url(https://source.unsplash.com/random/601x600/?red);
+    padding:.5em;
+}
+.bigGrid .card3 { 
+    background-image: url(https://source.unsplash.com/random/602x600/?yellow);
+    padding:.5em;
+}
+.bigGrid .card4 {
+    background-image: url(https://source.unsplash.com/random/603x600/?light);
+    padding:.5em;
+}
+.bigGrid .card5 {
+    background-image: url(https://source.unsplash.com/random/604x600/?pink);
+    padding:.5em;
+}
+.text {
+    background-color: rgba(0,0,0,.8);
+    padding: 10px;
+    min-height: 245px;
+}
+
+p{
+    margin: 0px;
+}
+
+a {
+    color: rgb(169, 210, 223);
+    display: block;
+}
+a:hover {
+    color: rgb(187, 187, 187);
+    font-style: oblique;
+}
+
+.eventName {
+    font-size: 1.5em;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.date {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.startTime{
+    margin: 0 auto;
+}
+
+.times {
+    font-style: italic;
+    display:inline-block;
+    font-size: 20px;
+}
+
+.location{
+    margin-top: 20px;
+    text-decoration: underline;
+}
+
+.organized{
+    margin-top: 5px;
+}
+
+.summary{
+    margin-bottom: 3px;
+}
+
+.eventtype {
+    font-size: .8em;
+    background-color: white;
+    color: black;
+    display:inline-block;
+    padding: 8px;
+    border-radius: 25px;
+    margin-top: 15px;
+}

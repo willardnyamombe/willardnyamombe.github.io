@@ -3,7 +3,7 @@ body {
     justify-content: space-around;
     max-width: 100%;
     margin: auto auto;
-    text-align: left;
+    /* text-align: left; */
 }
 nav{
     margin: 0 auto;

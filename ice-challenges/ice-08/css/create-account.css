@@ -1,2 +1,24 @@
+body {
+  background-color: #202634;
+  font-family: "Open Sans", sans-serif;
+}
 
-/*# sourceMappingURL=create-account.css.map *//*# sourceMappingURL=create-account.css.map */
+h1, h2, h3, h4, h5, h6, ul, li {
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  display: grid;
+  max-width: 565px;
+  grid-template-rows: 50px 138px 190px 78px 78px 78px 128px 58px;
+  margin: 0 auto;
+  gap: 25px;
+}
+section h2 {
+  text-transform: uppercase;
+  justify-self: center;
+  font-size: 2em;
+  color: white;
+  align-self: start;
+}/*# sourceMappingURL=create-account.css.map */

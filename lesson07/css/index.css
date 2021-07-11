@@ -1,13 +1,6 @@
 body {
-    max-width: 100%;
-    background-color: seashell;
-    justify-content: space-around;
-    margin: 0 auto;
-}
-#content {
-    background-color: white;
-    max-width: 1400px;
-    margin: 0 auto;
+    font-family: 'Roboto Condensed',
+        sans-serif;
 }
 nav{
     margin: 0 auto;
@@ -65,7 +58,13 @@ header h1{
     margin: 25px 0 5px 0;
     justify-items: center;
 }
-
+/* .ham {
+    margin: 35px 0 ;
+    place-items: space;
+    padding: 0 0 0 50px;
+    height: 30px;
+    width: 80px;
+} */
 .ham, a{
 
     /* margin: 35px 0 ; */

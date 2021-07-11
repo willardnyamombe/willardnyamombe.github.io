@@ -134,8 +134,67 @@ picture .wide-pic{
 }
 
 
+/* footer */
+
+#contactsec{
+    padding: 0px 15px;
+}
+#contactinfo h4{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin: 0px;
+    font-family: Roboto, sans-serif;
+}
+#locationimage-small{
+    display: none;
+}
+h4 {
+    margin: 0px;
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+#locationimage-large{
+    padding-top: 10px;
+    padding-bottom: 15px;
+    width: 100%;
+}
+.location-icon{
+    display: none;
+}
+.social-media{
+    display: none;
+}
+#copyright{
+    background-color: white;
+    text-align: center;
+}
+
+#contactinfo{
+    display: block;
+}
+
+.phone{
+    display: block; 
+}
+#info-icon{
+    width: 20px;
+}
+#social-media{
+    display: none;
+}
 
 
+#copyright{
+    padding: 15px;
+    display: auto;
+    background-color: lightcoral;
+    color: white;
+}
 
 
 

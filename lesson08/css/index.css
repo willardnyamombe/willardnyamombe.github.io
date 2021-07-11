@@ -97,8 +97,11 @@ form{background-color: seashell;
     display: flex;
     flex-direction: column;
     padding: 10%;
+    border-radius: 20px;
 }
-
+.header-name{
+    text-align: center;
+}
 #radio2{
     font-size: 20px;
     display: inline-block;

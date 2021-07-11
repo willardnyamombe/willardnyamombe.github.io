@@ -43,8 +43,8 @@
     /* footer */
     
     #contactsec {
-        background-color: lightcoral;
-        color: white;
+        background-color: white;
+        
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         padding: 20px;

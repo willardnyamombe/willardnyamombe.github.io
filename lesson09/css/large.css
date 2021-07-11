@@ -25,9 +25,14 @@
     /* main */
 main{
     max-width: 800px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
+    margin: auto auto;
+    text-align: center;
+    align-content: center;
+    align-self: stretch;
+
         
-        display: grid;
+        /* display: grid; */
         background-color: rgba(180, 238, 240, 0.952);
 }
     .cards{

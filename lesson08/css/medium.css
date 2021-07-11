@@ -68,8 +68,12 @@
     }
 
 
-    .header-name{
+    /* .header-name{
         max-width: 820px;
+        margin: 0 auto;
+    } */
+    /* footer */
+    .header-name{
         margin: 0 auto;
     }
     .location-icon{

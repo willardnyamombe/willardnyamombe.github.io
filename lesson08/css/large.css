@@ -29,16 +29,12 @@
         font-style: oblique;
     }
 
-
-
-
-
     
-    /* footer */
+     /* footer */
     
-    #contactsec {
-        background-color: lightcoral;
-        color: white;
+     #contactsec {
+        background-color: white;
+        /* color: white; */
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         padding: 20px;

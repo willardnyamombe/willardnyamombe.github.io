@@ -1,12 +1,6 @@
 body {
-    background-color: seashell;
-    justify-content: space-around;
-    margin: 0 auto;
-}
-#content {
-    background-color: white;
-    /* max-width: 1400px; */
-    margin: 0 auto;
+    font-family: 'Roboto Condensed',
+        sans-serif;
 }
 nav{
     margin: 0 auto;
@@ -18,6 +12,7 @@ nav{
 #navigation {
     list-style: none;
     padding: 0;
+    grid-template-columns: auto;
     display: grid;
 }
 /* turn on the first li */
@@ -36,7 +31,7 @@ nav{
     color: black;
     font-weight: 700;
 }
-#navigation a:hover, a.active:hover {
+#navigation a:hover, #navigation a.active:hover {
     color: white;
     background-color: black;
 }
@@ -48,6 +43,7 @@ nav{
 #navigation.responsive li{
     display: block;
 }
+
 #header-content {
     list-style: none;
     display: flex;
@@ -62,7 +58,13 @@ header h1{
     margin: 25px 0 5px 0;
     justify-items: center;
 }
-
+/* .ham {
+    margin: 35px 0 ;
+    place-items: space;
+    padding: 0 0 0 50px;
+    height: 30px;
+    width: 80px;
+} */
 .ham, a{
 
     /* margin: 35px 0 ; */
@@ -82,12 +84,6 @@ header p{
     margin: 5px 0;
     font-style: italic;
 }
-.header-name{
-    text-align: center;
-    font-family: Roboto, sans-serif;
-    font-style: italic;
-
-}
 /* form CSS */
 label {
     font-size: 20px;
@@ -100,6 +96,7 @@ form{background-color: seashell;
     font-family: Roboto, sans-serif;
     display: flex;
     flex-direction: column;
+    padding: 10%;
 }
 
 #radio2{

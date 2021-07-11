@@ -1,17 +1,7 @@
 @media only screen and (min-width: 63.5em) {
-    body{
-        background-color: seashell;
-    }
-    #content {
-        background-color: white;
-        max-width: 1400px;
-        margin: 0 auto;
-    }
     #navigation {
-        max-width: 90%;
+        width: 1000px;
         margin: 16px auto;
-    }
-    #navigation {
     }
     header img{
         width: 100%;

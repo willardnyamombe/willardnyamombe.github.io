@@ -1,11 +1,13 @@
 @media only screen and (min-width: 34.5em) {
     body {
         background-color: seashell;
-        /* max-width: 80%; */
+        /* max-width: 800px; */
     }
     
-    /* nav{max-width: 100%;} */
+    nav{max-width: 100%;}
     #navigation{
+        width: 800px;
+        margin: 16px auto;
         grid-template-columns: repeat(7,auto);
     }
     #navigation li{
@@ -13,6 +15,8 @@
     }
     #navigation a {
         text-align: center;
+        font-size: 20px;
+        padding: 0.75rem;
     }
     #navigation li:first-child {
         /* display:none; */
@@ -62,12 +66,11 @@
     }
 
     /* main card CSS */
-    /* main{
+    main{
         display: grid;
-        background-color: grey;
-        
-    
-    } */
+        margin: 0 auto;
+        max-width: 90%;
+    }
     .cards{
         display: grid;
         grid-template-columns: repeat(1, 1fr);

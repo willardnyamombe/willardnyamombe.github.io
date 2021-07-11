@@ -88,6 +88,7 @@ header p{
 }
 /* preston, fish haven, soda spring cards CSS */
 main{
+    max-width: 360px;
     display: grid;
     background-color: white;
     

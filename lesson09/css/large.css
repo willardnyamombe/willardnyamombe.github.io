@@ -1,7 +1,5 @@
 @media only screen and (min-width: 54.5em) {
-    body{
-        /* background-color: seashell; */
-    }
+
     #content {
         background-color: white;
         margin: 0 auto;
@@ -9,8 +7,7 @@
     #navigation {
         margin: 16px auto;
     }
-    #navigation {
-    }
+
     header img{
         width: 100%;
         height:auto;
@@ -31,8 +28,9 @@
     }
     /* main */
 main{
+    max-width: 800px;
     margin: 0 auto;
-    
+        
         display: grid;
         background-color: rgba(180, 238, 240, 0.952);
 }

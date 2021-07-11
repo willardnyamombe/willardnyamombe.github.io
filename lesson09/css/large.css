@@ -1,13 +1,9 @@
 @media only screen and (min-width: 54.5em) {
 
-    #content {
-        background-color: white;
-        margin: 0 auto;
-    }
     #navigation {
+        width: 1000px;
         margin: 16px auto;
     }
-
     header img{
         width: 100%;
         height:auto;

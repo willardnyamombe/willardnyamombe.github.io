@@ -1,7 +1,7 @@
 @media only screen and (min-width: 34.5em) {
     body {
         background-color: seashell;
-        max-width: 80%;
+       
     }
     
     nav{max-width: 100%;}
@@ -63,7 +63,11 @@
     }
 
     /* main */
-    
+    main{
+        display: grid;
+        margin: 0 auto;
+        max-width: 60%;
+    }
 
 
     .header-name{

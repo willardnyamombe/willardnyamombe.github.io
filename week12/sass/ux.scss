@@ -1,0 +1,21 @@
+// body{
+
+//     padding: 1em 20%;
+// }
+
+form {
+  width: 400px;
+  box-shadow: 10px 15px 17px gray;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0 auto;
+  border: 2px solid black;
+  padding: 1em;
+}
+button:hover {
+  background-color: blue;
+  color: white;
+}
+label {
+  display: inline-block;
+}

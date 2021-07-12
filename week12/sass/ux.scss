@@ -4,18 +4,48 @@
 // }
 
 form {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   width: 400px;
-  box-shadow: 10px 15px 17px gray;
+  box-shadow: 10px 15px 17px 12px rgb(233, 231, 231);
   display: grid;
   grid-template-columns: 1fr;
   margin: 0 auto;
-  border: 2px solid black;
+  border: 2px solid rgb(196, 190, 190);
   padding: 1em;
+  //   border-radius: 20px;
+  background-color: white;
 }
-button:hover {
+
+button {
+  background-color: white;
+  text-decoration: none;
+  border-color: transparent;
+  border-radius: 5px;
+}
+#submit {
   background-color: blue;
   color: white;
 }
+.relative {
+  margin-left: 55%;
+}
+
+#submit:hover,
+#cancel:hover {
+  display: inline-block;
+  color: white;
+  background-color: rgb(45, 45, 243);
+}
+
+#optional {
+  display: inline;
+  color: rgb(187, 183, 183);
+}
 label {
   display: inline-block;
+}
+input {
+  margin: 2%;
+  border-color: rgb(196, 190, 190);
+  border-radius: 5px;
 }

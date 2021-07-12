@@ -9,28 +9,31 @@
 </head>
 <body>
     <form id='form' action="#" method="get">
-        <label for='name'>Name: 
+        <label for='name'>Name 
             <br>
-            <input type="text" id='name' name="name" placeholder="Enter your name here">
+            <input type="text" id='name' name="name" placeholder="Enter your name here" style="width: 95%; height: 40px">
         </label>
         
         
-        <label for='email'>Email Address: 
+        <label for='email'>Email Address 
             <br>
-            <input type="text" id='email' name="email" placeholder="Enter your name here ">
+            <input type="text" id='email' name="email" placeholder="Enter your email ID(eg: abc@example.com)" style="width: 95%; height: 40px">
         </label>
 
-        <label for='birthdate'>Date of Birth: 
+        <label for='birthdate'>Date of Birth 
             <br>
-            <input type="date" id='birthdate' name="birthdate" placeholder="DD/MM/YYYY">
+            <input type="date" id='birthdate' name="birthdate" placeholder="DD/MM/YYYY" style="width: 95%; height: 40px">
         </label>
 
-        <label for='phone'>Phone Number: 
+        <label for='phone'>Phone Number <p id="optional">(Optional)</p>
             <br>
-            <input type="tel" id='name' name="phone" placeholder="Enter valid phone number ">
+            <input type="tel" id='name' name="phone" placeholder="Enter valid phone number " style="width: 95%; height: 40px">
         </label>
-        <button type="reset" value="Reset">Cancel</button>
-        <button id= 'submit' type="submit" value="Submit">Submit</button>
+        <div class="relative">
+            <button id="cancel" type="reset" value="Reset" style="width: 80px; height: 40px;">Cancel</button>
+        <button id= 'submit' type="submit" value="Submit" style="width: 80px; height: 40px;">Submit</button>
+        </div>
+        
         
     </form>
 </body>

@@ -1,12 +1,8 @@
-// body{
-
-//     padding: 1em 20%;
-// }
 
 form {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   width: 400px;
-  box-shadow: 10px 15px 17px 12px rgb(233, 231, 231);
+  box-shadow: 10px 15px 17px rgb(233, 231, 231);
   display: grid;
   grid-template-columns: 1fr;
   margin: 0 auto;
@@ -17,24 +13,27 @@ form {
 }
 
 button {
+    display: inline-block;
   background-color: white;
   text-decoration: none;
   border-color: transparent;
   border-radius: 5px;
 }
 #submit {
-  background-color: blue;
-  color: white;
+    background-color: rgb(45, 45, 243);
+    color: white;
 }
 .relative {
   margin-left: 55%;
 }
+#submit:hover{
+    color: rgb(236, 175, 175);
+  background-color: rgb(87, 87, 238);
+}
 
-#submit:hover,
 #cancel:hover {
-  display: inline-block;
-  color: white;
-  background-color: rgb(45, 45, 243);
+    color: white;
+    background-color: blue;
 }
 
 #optional {

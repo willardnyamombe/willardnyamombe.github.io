@@ -119,7 +119,9 @@ main {
 #box2 {
     text-align: right;
 }
-
+.box-weather.article a{
+    color: blue;
+}
 .weather {
     background-color: peachpuff;
 }

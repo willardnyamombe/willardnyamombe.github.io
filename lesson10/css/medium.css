@@ -114,9 +114,10 @@ main{
   }
   .box-weather.article a{
     color: blue;
+
   }
   .box-weather.weather h3 {
-    text-align: center;
+    text-align: start;
   }
 
   #article-img {

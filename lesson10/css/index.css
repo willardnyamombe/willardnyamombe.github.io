@@ -120,6 +120,7 @@ main {
     text-align: right;
 }
 .box-weather.article a{
+    margin-left: 0;
     color: blue;
 }
 .weather {

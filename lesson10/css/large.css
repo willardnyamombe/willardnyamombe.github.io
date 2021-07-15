@@ -59,6 +59,12 @@
         border: 5px solid peachpuff;
         line-height: 10px;
       }
+      .box-weather.article{
+          text-align: left;
+      }
+      .box-weather.article h3{
+        text-align: left;
+    }
       .box-weather.forecast {
         width: 800px;
         padding: 0;

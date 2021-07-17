@@ -70,5 +70,38 @@ async function getWeather() {
 
         });
 
+        window.addEventListener("load", (event) => {
+            requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json'
+        
+            fetch(requestURL)
+            .then(function (response) {
+                return response.json()
+            })
+            .then(function (townData) {
+                const towns = townData.towns
+                for (let i = 0; i < towns.length; i++){
+                    let town = towns[i]
+                    if (town.name == 'Preston'){
+                        let eventCard = document.createElement('section');
+                let eventText = document.createElement('div');
+                let eventLine = document.createElement('h3');
+                let line = document.createElement('hr');
+
+                for(let i = 0; i <town.events.length;i++){
+                    let eventDesc =document.createElement('p');
+                    eventDesc.textContent = town.events[i];
+                    eventText.appendChild(eventDesc);
+                }
+                eventLine.textContent = "Upcoming Events:";
+                eventCard.appendChild(eventLine);
+                eventCard.appendChild(line);
+                eventCard.appendChild(eventText);
+
+                document.querySelector("#event").appendChild(eventCard);
+            }
+                }
+            })
+        });
+
 
 }

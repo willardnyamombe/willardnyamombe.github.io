@@ -37,17 +37,18 @@
         align-content: center;
         align-self: stretch;
     
-            
+            /* background-color: rgba(180, 238, 240, 0.952); */
             /* display: grid; */
             /* background-color: rgba(180, 238, 240, 0.952); */
     }
     .home{
-        background-color: rgba(180, 238, 240, 0.952);
+        /* background-color: rgba(180, 238, 240, 0.938); */
+        background-color: peachpuff;
     }
         .cards{
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-         background-color:rgba(180, 238, 240, 0.952);
+         background-color:peachpuff;
          margin: 20px;
          
         }

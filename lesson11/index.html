@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Storm Center</title>
+    <link rel="stylesheet" href="popup.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+  </head>
+
+  <body>
+    <div id="content">
+      <div class="pancakes">
+        <h1>Saturday Pancakes</h1>
+        <img src="images/pancake.png" alt="pancake" />
+        <p>
+          "Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the
+          city park pavilion."
+        </p>
+      </div>
+
+      <header>
+        <ul id="header-content">
+          <li>
+            <img
+              src="images/iconfinder_stock_weather-night-few-clouds_29220.png"
+              alt="logo icon"
+            />
+          </li>
+          <li id="h1-style">
+            <h1>Travel & Weather</h1>
+            <p>Your Weather Paradise is here!</p>
+          </li>
+          <li class="ham"><a href="#">&#9776;</a></li>
+        </ul>
+      </header>
+      <nav>
+        <ul id="navigation">
+          <li>
+            <a href="https://willardnyamombe.github.io/lesson09/home-09.html"
+            class="active">Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://willardnyamombe.github.io/lesson10/preston-10.html"
+              >Preston</a
+            >
+          </li>
+          <li><a href="#">Soda Spring</a></li>
+          <li><a href="#">Fish Haven</a></li>
+          <li>
+            <a
+              href="https://willardnyamombe.github.io/lesson08/stormcenter-08.html"
+              >Storm Center</a
+            >
+          </li>
+          <li>
+            <a
+              id="gallery-link"
+              href="https://willardnyamombe.github.io/lesson07/gallery-07.html"
+              
+              >Gallery</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <main class="home">
+        <div class="cards"></div>
+      </main>
+
+      <footer>
+        <section id="contactsec">
+          <img
+            id="locationimage-small"
+            src="images/locationmap.png"
+            alt="location-map"
+          />
+          <div id="contactinfo">
+            <h4>Contact Information</h4>
+            <span class="location-icon">
+              <img
+                id="info-icon"
+                src="images/iconmaps-google.png"
+                alt="map pin icon"
+              />
+              Location</span
+            >
+            <span class="phone">
+              <img id="info-icon" src="images/iconphone.png" alt="phone icon" />
+              + 1 2743 444 98870
+            </span>
+            <span id="email">
+              <img id="info-icon" src="images/icongmail.png" alt="email icon" />
+              john@john.com
+            </span>
+            <a href="https://www.facebook.com" target="_blank">
+              <img
+                class="social-media"
+                id="facebook-icon"
+                src="images/iconFacebook.png"
+                alt="facebook icon"
+              />
+            </a>
+            <a href="https://www.instalgram.com" target="_blank">
+              <img
+                class="social-media"
+                id="instalgram-icon"
+                src="images/iconinstagram.png"
+                alt="instalgram"
+              />
+            </a>
+            <a href="https://www.youtube.com" target="_blank">
+              <img
+                class="social-media"
+                id="youtube-icon"
+                src="images/iconYoutube.png"
+                alt="youtube icon"
+              />
+            </a>
+          </div>
+          <img
+            id="locationimage-large"
+            src="images/locationmap.png"
+            alt="location-map"
+          />
+        </section>
+
+        <section id="copyright">
+          <p>
+            &copy 2021 Willard Nyamombe <br />
+            Last Updated: <span id="currentdate"></span>
+          </p>
+        </section>
+      </footer>
+    </div>
+    <script src="js/index.js"></script>
+    <script src="popup.js"></script>
+    <script src="js/pancake-alert.js"></script>
+    <script src="js/windchill.js"></script>
+  </body>
+</html>

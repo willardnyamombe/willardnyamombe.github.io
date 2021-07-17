@@ -1,0 +1,211 @@
+@media only screen and (min-width: 54.5em) {
+
+    
+    #navigation {
+        max-width: 80%;
+        margin: 16px auto;
+    }
+    #navigation a {
+        text-align: center;
+        font-size: 20px;
+      }
+    header img{
+        width: 100%;
+        height:auto;
+    }
+    
+    header h1{
+        font-size: 35px;
+        margin: 25px 0 5px 0;
+        justify-items: center;
+    }
+    header p{
+        font-size: 20px;
+        margin: 5px 0;
+        font-style: italic;
+    }
+    .ham{
+        display: none;
+    }
+
+    /* main css for index/home */
+    main{
+        max-width: 800px;
+        /* margin: 0 auto; */
+        margin: auto auto;
+        text-align: center;
+        align-content: center;
+        align-self: stretch;
+    
+            
+            /* display: grid; */
+            background-color: rgba(180, 238, 240, 0.952);
+    }
+        .cards{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+         background-color:rgba(180, 238, 240, 0.952);
+         margin: 20px;
+         
+        }
+        .cards section{
+            display: block;
+            grid-template-columns: 1fr;
+            padding: 20px;
+            background-color: cornsilk;
+        }
+        .cards img{
+            width:100%;
+            grid-row:2/3;
+            align-self: end;
+        }
+        .cards section h1{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            color: darkblue;
+            text-shadow: 2px 1px rgb(139, 177, 235);
+        }
+        .cards section span{
+            font-family: sans;
+            font-weight: bolder;
+            color: rgb(5, 5, 48);
+            text-shadow: 1px 0.5px rgb(139, 177, 235);
+        }
+        .cards section p{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: lighter;
+            font-size: 1vw;
+            color: rgb(5, 5, 48);
+            text-shadow: 1px .5px rgb(139, 177, 235);
+        }
+    
+    /* main css for preston */
+   
+    .article-img{
+        width: 800px;
+        position: relative;
+    }
+    .box-weather.weather {
+        position: absolute;
+        margin-top: 100px;
+        margin-left: 50px;
+
+    }
+    .box-weather.weather {
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        padding: 10px;
+        margin-top: 90px;
+        margin-left: 20px;
+        background-color: rgba(255, 218, 185, 0.609);
+        border: 5px solid peachpuff;
+        line-height: 10px;
+      }
+      .box-weather.article{
+          text-align: left;
+      }
+      .box-weather.article h3{
+        text-align: left;
+    }
+      .box-weather.forecast {
+        width: 800px;
+        padding: 0;
+      }
+    .images-lined{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        list-style: none;
+        text-align: center; 
+    }
+    .image-lined li p, h6{
+        margin: 12px 0;
+    }
+    .images-lined img{
+        height: 90px;
+        overflow: scroll;
+    }
+    .article-image {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* display: flex; */
+        /* flex-direction: column; */
+    }
+    .article-image img{
+        width: 100%;
+        margin: auto;
+        
+    }
+
+    /* css for stormcenter */
+    main .fomu{
+        display: grid;
+        margin: 0 auto;
+        max-width: 80%;
+    }
+    
+    .card-summary{
+        display: block;
+        padding: 8px 10px;
+        font-style: oblique;
+    }
+     /* footer */
+    
+     #contactsec {
+        background-color: white;
+        /* color: white; */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px;
+        margin-top: 20px;
+    }
+    #locationimage-large{
+        display: block;
+        margin: 0px 50px 0px auto;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 10px;
+        padding-bottom: 15px;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    #locationimage-small{
+        display: none;
+    }
+    div{
+        display: block;
+    }
+    #contactinfo{
+        padding: 10px 0px 20px 70px;
+    }
+    .social-media{
+        display: grid;
+        grid-column: 2/3;
+        grid-row: 1/2;
+        display: inline;
+        width: 40px;
+        padding: 15px 10px;
+        
+    } 
+    #email{
+        display: block;
+    }
+    
+    #contactinfo a{
+        padding: 10px 0px;
+    }
+    /* gallery css */
+    .gallery-container{
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        justify-content: center;
+        grid-gap: 20px;
+    }
+    .card-summary{
+        display: block;
+        padding: 8px 10px;
+        font-style: oblique;
+    }
+
+}

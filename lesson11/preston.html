@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Storm Center</title>
+    <link rel="stylesheet" href="popup.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+  </head>
+
+  <body>
+    <div id="content">
+      <div class="pancakes">
+        <h1>Saturday Pancakes</h1>
+        <img src="images/pancake.png" alt="pancake" />
+        <p>
+          "Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the
+          city park pavilion."
+        </p>
+      </div>
+
+      <header>
+        <ul id="header-content">
+          <li>
+            <img
+              src="images/iconfinder_stock_weather-night-few-clouds_29220.png"
+              alt="logo icon"
+            />
+          </li>
+          <li id="h1-style">
+            <h1>Travel & Weather</h1>
+            <p>Your Weather Paradise is here!</p>
+          </li>
+          <li class="ham"><a href="#">&#9776;</a></li>
+        </ul>
+      </header>
+      <nav>
+        <ul id="navigation">
+          <li>
+            <a href="https://willardnyamombe.github.io/lesson09/home-09.html"
+            >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://willardnyamombe.github.io/lesson10/preston-10.html"
+              class="active">Preston</a
+            >
+          </li>
+          <li><a href="#">Soda Spring</a></li>
+          <li><a href="#">Fish Haven</a></li>
+          <li>
+            <a
+              href="https://willardnyamombe.github.io/lesson08/stormcenter-08.html"
+              >Storm Center</a
+            >
+          </li>
+          <li>
+            <a
+              id="gallery-link"
+              href="https://willardnyamombe.github.io/lesson07/gallery-07.html"
+              
+              >Gallery</a
+            >
+          </li>
+        </ul>
+      </nav>
+        <main class="preston">
+          <h2 class="titlename">Preston, Idaho</h2>
+          <picture class="hero-img">
+            <source srcset="images/image_franklin600.jpeg" media="(min-width:34.5em) and (max-width:800px)">
+            <source srcset="images/image_franklin900.jpeg" media="(min-width:800px)">
+            <img class="article-img" src="images/image_franklin360.jpeg" alt="Preston Fishing Pros Logo">
+        </picture>
+          
+           
+          <div class="box-weather weather">
+              <h3><u>Weather Summary</u></h3>
+              <div class="wrapper">
+                <div id="box1">
+                  <p>Currently: </p>
+                <p>High: </p>
+                <p>Wind Chill:  </p>
+                <p>Humidity: </p>
+                <p>Windspeed: </p>
+                </div>
+                <div id="box2">
+
+                  <!--currently-->
+                  <p id="condition"></p>
+  
+                  <!--high temp-->
+                  <p><span id="temp"></span>°F</p>
+  
+                  <!--wind chill-->
+                  <p><span id="windChill"></span></p>
+  
+                  <!--humidity-->
+                  <p><span id="humidity"></span>%</p>
+  
+                  <!--wind speed-->
+                  <p><span id="windSpeed"></span>mph</p>
+  
+              </div>
+  
+                </div>
+
+              </div>
+
+              <div class="box-weather forecast">
+                <h3>5 Day Forecast</h3>
+                <ul id="forecast">
+                    <li id="list-grid"><span id="dayName1"></span><span id="weatherImg1"></span><span id="dayTemp1"></span></li>
+                    <li id="list-grid"><span id="dayName2"></span><span id="weatherImg2"></span><span id="dayTemp2"></span></li>
+                    <li id="list-grid"><span id="dayName3"></span><span id="weatherImg3"></span><span id="dayTemp3"></span></li>
+                    <li id="list-grid"><span id="dayName4"></span><span id="weatherImg4"></span><span id="dayTemp4"></span></li>
+                    <li id="list-grid"><span id="dayName5"></span><span id="weatherImg5"></span><span id="dayTemp5"></span></li>
+                </ul>
+            </div>
+    
+            <div class="box-weather article">
+                <h3><a target="_blank" href="https://www.visitpreston.com/visit/things-to-do-in-preston/walksandtours/guidedwalkstours/samlesbury-hall-guided-tours/">Samlesbury Hall Guided Tours</a></h3>
+                <p>By Samlesbury Hall Guided Tours</a></p>
+    
+                <picture id="article-img">
+                  <source srcset="images/image_franklin600.jpeg" media="(min-width:34.5em) and (max-width:800px)">
+                  <source srcset="images/image_franklin900.jpeg" media="(min-width:800px)">
+                  <img class="wide-pic" src="images/image_franklin360.jpeg" alt="Preston Fishing Pros Logo">
+              </picture>
+                <p>Samlesbury Hall has something for everyone and, with its free tours, you can enjoy a full and entertaining day out.
+
+                  Always in costume and character, Samlesbury Hall's signature tour guides will take you on a journey through the hall's fascinating, and often bloody, history.
+                  
+                  History enthusiasts can enjoy a range of talks on topics such as WWI, King Henry VIII, and 'Toys of Yesteryear', whereas those looking for a more spooky edge can enjoy tales of witches and ghosts.
+                  
+                  Both fun and educational, these tours are perfect for adults and children.</p>
+                <p> Tours take place at Samlesbury Hall every Sunday, usually at 11am and 2pm, as well as during school half terms and holidays.
+
+                  Special evening ghost tours also take place at different times throughout the year.</p>
+                <p>Guided Sunday tours are free to attend and no booking is required.
+                  Special tours, such as evening ghost tours, may require booking and a cost. To see what special tours are on and when visit Samlesbury Hall - What's on.</p>
+                <p> Group tours are available to book at a price per person. You can choose your tour guide and topic and even book a private evening tour.
+
+                  For more details and how to book visit Samlesbury Hall - Groups.</p>
+                <!-- <p> But where do you start? Where to begin? In this story on Idaho trout waters, we’ll recommend
+                    five
+                    sure-fire places to catch trout — on a do-it-yourself level, or in the lap of luxury on a guided
+                    trip.</p> -->
+            </div>
+              
+          </div>
+             
+          
+      </main>
+
+
+      <footer>
+        <section id="contactsec">
+          <img
+            id="locationimage-small"
+            src="images/locationmap.png"
+            alt="location-map"
+          />
+          <div id="contactinfo">
+            <h4>Contact Information</h4>
+            <span class="location-icon">
+              <img
+                id="info-icon"
+                src="images/iconmaps-google.png"
+                alt="map pin icon"
+              />
+              Location</span
+            >
+            <span class="phone">
+              <img id="info-icon" src="images/iconphone.png" alt="phone icon" />
+              + 1 2743 444 98870
+            </span>
+            <span id="email">
+              <img id="info-icon" src="images/icongmail.png" alt="email icon" />
+              john@john.com
+            </span>
+            <a href="https://www.facebook.com" target="_blank">
+              <img
+                class="social-media"
+                id="facebook-icon"
+                src="images/iconFacebook.png"
+                alt="facebook icon"
+              />
+            </a>
+            <a href="https://www.instalgram.com" target="_blank">
+              <img
+                class="social-media"
+                id="instalgram-icon"
+                src="images/iconinstagram.png"
+                alt="instalgram"
+              />
+            </a>
+            <a href="https://www.youtube.com" target="_blank">
+              <img
+                class="social-media"
+                id="youtube-icon"
+                src="images/iconYoutube.png"
+                alt="youtube icon"
+              />
+            </a>
+          </div>
+          <img
+            id="locationimage-large"
+            src="images/locationmap.png"
+            alt="location-map"
+          />
+        </section>
+
+        <section id="copyright">
+          <p>
+            &copy 2021 Willard Nyamombe <br />
+            Last Updated: <span id="currentdate"></span>
+          </p>
+        </section>
+      </footer>
+    </div>
+    <script src="js/preston.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/pancake-alert.js"></script>
+    <script>
+      getWeather();
+    </script>
+  </body>
+</html>

@@ -37,18 +37,17 @@
         align-content: center;
         align-self: stretch;
     
-            /* background-color: rgba(180, 238, 240, 0.952); */
+            
             /* display: grid; */
             /* background-color: rgba(180, 238, 240, 0.952); */
     }
     .home{
-        /* background-color: rgba(180, 238, 240, 0.938); */
-        background-color: peachpuff;
+        background-color: rgba(180, 238, 240, 0.931);
     }
         .cards{
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-         background-color:peachpuff;
+         background-color:rgba(180, 238, 240, 0.952);
          margin: 20px;
          
         }
@@ -89,18 +88,18 @@
         width: 800px;
         position: relative;
     }
-    .box-weather.weather {
+    /* .box-weather.weather {
         position: absolute;
         margin-top: 100px;
         margin-left: 50px;
 
-    }
+    } */
     .box-weather.weather {
         height: 200px;
         width: 200px;
         position: absolute;
         padding: 10px;
-        margin-top: 90px;
+        margin-top: -350px;
         margin-left: 20px;
         background-color: rgba(255, 218, 185, 0.609);
         border: 5px solid peachpuff;

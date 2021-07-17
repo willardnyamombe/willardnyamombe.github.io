@@ -89,7 +89,7 @@ header p{
     font-style: italic;
 }
 /* main css for index/home */
-main{
+main .home{
     max-width: 360px;
     display: grid;
     background-color: white;

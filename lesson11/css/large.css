@@ -39,7 +39,10 @@
     
             
             /* display: grid; */
-            background-color: rgba(180, 238, 240, 0.952);
+            /* background-color: rgba(180, 238, 240, 0.952); */
+    }
+    .home{
+        background-color: rgba(180, 238, 240, 0.952);
     }
         .cards{
             display: grid;
@@ -138,16 +141,18 @@
     }
 
     /* css for stormcenter */
-    main .fomu{
-        display: grid;
-        margin: 0 auto;
-        max-width: 80%;
-    }
+
     
     .card-summary{
-        display: block;
+        /* display: block; */
         padding: 8px 10px;
         font-style: oblique;
+    }
+    .form-container label{
+        text-align: left;
+    }
+    .form-container #radio2{
+        text-align: left;
     }
      /* footer */
     

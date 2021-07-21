@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="A website for temples and their location"
+    />
+    <title>Temple Inn & Suites</title>
+
+    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- STYLE SHEETS -->
+    <link href="css/normalize.css" rel="stylesheet" />
+    <!-- phone-default -->
+    <link href="css/small.css" rel="stylesheet" />
+    <!-- enhance-tablet -->
+    <link href="css/medium.css" rel="stylesheet" />
+    <!-- enhance-desktop -->
+    <link href="css/large.css" rel="stylesheet" />
+  </head>
+
+  <body class="index">
+    <header>
+      <div class="grid-container">
+        <img src="images/download.png" alt="Logo" width="50px" />
+        <div class="header-item">
+          <h1>Temple Inn & Suites</h1>
+          <h2>The best one in town!</h2>
+        </div>
+      </div>
+    </header>
+
+    <nav class="clearfix">
+      <ul>
+        <!-- <li id="hammy"><a class="ham" href="#">&#9776;</a></li> -->
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="temples.html">Temples</a></li>
+        <li><a href="reservations.html">Reservations</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="services.html">Services</a></li>
+      </ul>
+    </nav>
+    <!-- <div class="banner">
+        <a href="reservations.html">
+            <section class="blue-title">
+                <h1>Make a Reservation Today!</h1>
+                <h3>To celebrate our grand-opening, we're offering 20% off for reservations made before July 31st, 2021!
+                </h3>
+            </section>
+        </a>
+        <img src="images/abatemple.jpg" alt="Temple">
+    </div> -->
+    <main id="index">
+      <section>
+        <picture id="temple-img">
+          <source
+            srcset="images/abatemple600.jpeg"
+            media="(min-width:34.5em) and (max-width:800px)"
+          />
+          <source srcset="images/abatemple900.jpeg" media="(min-width:800px)" />
+          <img class="wide-pic" src="abatemple360.jpeg" alt="temple" />
+          <caption>
+            Aba Temple
+          </caption>
+        </picture>
+        <h1>Temple Inn & Suites</h1>
+        <p>
+          The Temple Inn & Suites is a hotel chain headquartered in Bethesda, MD
+          that builds and manages specialized hotel accommodations near temple
+          locations of The Church of Jesus Christ of Latter-day Saints around
+          the world. The owner-operated company caters to temple workers,
+          patrons, and their families by providing specialized services and
+          accommodations that meet the needs of those patrons.
+        </p>
+        <p>
+          The hotel accommodations and services are available to anyone willing
+          to abide by the terms and policies outlined by the company.
+        </p>
+        <p>
+          The overall goal of the website project is to promote and provide
+          information about the specialized services that this hotel chain
+          offers to meet the needs of temple patrons who come to serve in the
+          temple or who participate in events such as sealings, weddings,
+          receptions, and youth trips. The website should reflect the Church
+          culture and be designed to support a temple oriented theme as well as
+          the concept of being a haven of comfort and accessibility.
+        </p>
+      </section>
+      <br />
+      <hr />
+      <br />
+      <section>
+        <!-- Information from: https://churchofjesuschristtemples.org/kona-hawaii-temple/ -->
+        <h2>Johannesburg South Africa Temple</h2>
+        <p>
+          This temple has suspended all operations and ordinances until further
+          notice. If you have an existing appointment for a sealing or your own
+          endowment, you will be contacted by temple staff. Please check this
+          page frequently for updates. Thank you.
+        </p>
+        <div id="temple-stuff">
+          <picture id="joburg-img">
+            <source
+              srcset="images/joburg600.jpg"
+              media="(min-width:34.5em) and (max-width:800px)"
+            />
+            <source srcset="images/joburg900.jpeg" media="(min-width:800px)" />
+            <img class="wide-pic" src="images/joburg360.jpg" alt="temple" />
+          </picture>
+          <div id="grid-wrapper-info">
+            <section>
+              <h4>Address</h4>
+              7 Jubilee Rd<br />
+              Johannesburg, 2193<br />
+              South Africa<br />
+              Telephone: (27) 11-645-1540
+            </section>
+            <section id="right">
+              <h4>Services</h4>
+              Clothing rental available <br />
+              No cafeteria available <br />
+              No patron housing available <br />
+              Distribution center nearby <br />
+            </section>
+          </div>
+          <!-- <section class="item">
+            <h4>Description</h4>
+            <p>
+              
+            </p>
+          </section> -->
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p class="legal">
+        &copy; <span id="copyrightyear"></span> | Temple Inn & Suites |
+        Bethesda, MD | <span id="weekday"></span>, <span id="day"></span>
+        <span id="month"></span> <span id="year"></span>
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,54 +1,63 @@
-
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="A website for temples and their location"
+    />
+    <title>Temple Inn & Suites</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="A weather forecasting site made for dogs and dog owners.">
-    <link rel="shortcut icon" href="favicon.ico">
-    <link rel="stylesheet" href="css/styles.css">
-    <!-- Google fonts go here -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC&family=Libre+Franklin&family=Noto+Sans+JP&display=swap"
-        rel="stylesheet">
-    <script src="scripts/script.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Temples | Temple Inn & Suites</title>
-</head>
+    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- STYLE SHEETS -->
+    <link href="css/normalize.css" rel="stylesheet" />
+    <!-- phone-default -->
+    <link href="css/small.css" rel="stylesheet" />
+    <!-- enhance-tablet -->
+    <link href="css/medium.css" rel="stylesheet" />
+    <!-- enhance-desktop -->
+    <link href="css/large.css" rel="stylesheet" />
+    <script src="json/loadtemples.js"></script>
+  </head>
 
-<body>
-    <div class="logo-banner">
-        <div class="grid-container">
-            <img src="images/Logo.png" alt="Logo">
-            <h1>Temple Inn & Suites</h1>
+  <body>
+    <header>
+      <div class="grid-container">
+        <img src="images/download.png" alt="Logo" width="50px" />
+        <div class="header-item">
+          <h1>Temple Inn & Suites</h1>
+          <h2>The best one in town!</h2>
         </div>
-    </div>
-    <nav>
-        <ul id="navigation">
-            <li id="hammy"><a class="ham" href="#">&#9776;</a></li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="temples.html">Temples</a></li>
-            <li><a href="reservations.html">Reservations</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="services.html">Services</a></li>
-        </ul>
+      </div>
+    </header>
+
+    <nav class="clearfix">
+      <ul>
+        <!-- <li id="hammy"><a class="ham" href="#">&#9776;</a></li> -->
+        <li class="active"><a href="https://willardnyamombe.github.io/FinalProject/index.html">Home</a></li>
+        <li><a href="temples.html">Temples</a></li>
+        <li><a href="https://willardnyamombe.github.io/FinalProject/reservation.html">Reservations</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="services.html">Services</a></li>
+      </ul>
     </nav>
-    <!-- Temple One: https://www.churchofjesuschrist.org/temples/details/anchorage-alaska-temple?lang=eng
-    Temple Two: https://www.churchofjesuschrist.org/temples/details/albuquerque-new-mexico-temple?lang=eng 
-    Temple Three: https://www.churchofjesuschrist.org/temples/details/gilbert-arizona-temple?lang=eng 
-    Temple Four: https://www.churchofjesuschrist.org/temples/details/kona-hawaii-temple?lang=eng  -->
-    <main id="temples">
-        <div class="cards">
+    <!-- 
+    Temple One link: https://www.churchofjesuschrist.org/temples/details/johannesburg-south-africa-temple?lang=eng
+    Temple Two link: https://www.churchofjesuschrist.org/temples/details/rexburg-idaho-temple?lang=eng 
+    Temple Three link: https://www.churchofjesuschrist.org/temples/details/kansas-city-missouri-temple?lang=eng 
+    Temple Four link: https://www.churchofjesuschrist.org/temples/details/twin-falls-idaho-temple?lang=eng  -->
+    <main class="temples">
+        <section class="cards">
 
-        </div>
+        </section>
     </main>
     <footer>
-        <p class="legal">&copy; <span id="copyrightyear"></span> | Temple Inn & Suites | Bethesda, MD |
-            <span id="weekday"></span>, <span id="day"></span> <span id="month"></span> <span id="year"></span>
-    </footer>
-
-</body>
-
-</html>
+        <p class="legal">
+            &copy; <span id="copyrightyear"></span> | Temple Inn & Suites |
+            Bethesda, MD | Last Updated: <span id="weekday"></span>, <span id="day"></span>
+            <span id="month"></span> <span id="year"></span>
+          </p>
+      </footer>
+    </body>
+  </html>

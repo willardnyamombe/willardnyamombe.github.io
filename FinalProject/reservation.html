@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="A website for temples and their location"
+    />
+    <title>Temple Inn & Suites</title>
+
+    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- STYLE SHEETS -->
+    <link href="css/normalize.css" rel="stylesheet" />
+    <!-- phone-default -->
+    <link href="css/small.css" rel="stylesheet" />
+    <!-- enhance-tablet -->
+    <link href="css/medium.css" rel="stylesheet" />
+    <!-- enhance-desktop -->
+    <link href="css/large.css" rel="stylesheet" />
+  </head>
+
+  <body class="index">
+    <header>
+      <div class="grid-container">
+        <img src="images/download.png" alt="Logo" width="50px" />
+        <div class="header-item">
+          <h1>Temple Inn & Suites</h1>
+          <h2>The best one in town!</h2>
+        </div>
+      </div>
+    </header>
+
+    <nav class="clearfix">
+      <ul>
+        <!-- <li id="hammy"><a class="ham" href="#">&#9776;</a></li> -->
+        <li><a href="index.html">Home</a></li>
+        <li><a href="temples.html">Temples</a></li>
+        <li class="active"><a href="reservation.html">Reservations</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="services.html">Services</a></li>
+      </ul>
+    </nav>
+
+    <main >
+      <div id="res-form">
+        <h1 class="reservation-header">Make a Reservation Today!</h1>
+      
+
+        <form id="form" action="#" method="get">
+          <label for="name"
+            >Full Name:
+            <br />
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your name here"
+              style="width: 95%; height: 40px"
+            />
+          </label>
+  
+          <label for="email"
+            >Email Address:
+            <br />
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Enter your email ID(eg: abc@example.com)"
+              style="width: 95%; height: 40px"
+            />
+          </label>
+          <label for="phone"
+            >Phone Number:
+            <p id="optional">(Optional)</p>
+            <br />
+            <input
+              type="tel"
+              id="name"
+              name="phone"
+              placeholder="Enter valid phone number "
+              style="width: 95%; height: 40px"
+            />
+          </label>
+          <label for="Inntype"
+            >Choose Location:
+            <select name="inntype" id="inntype" style="width: 95%; height: 40px">
+              <option value=" " disabled selected>Select Hotel/Inn</option>
+              <option value="Twin Falls Idaho Temple">
+                Twin Falls Idaho Temple
+              </option>
+              <option value="Rexburg Idaho Temple">Rexburg Idaho Temple</option>
+              <option value="Kansas City Missouri Temple">
+                Kansas City Missouri Temple
+              </option>
+              <option value="Johannesburg South Africa Temple">
+                Johannesburg South Africa Temple
+              </option>
+            </select>
+          </label>
+  
+          <label for="birthdate"
+            >Reservation Start Date:
+            <br />
+            <input
+              type="date"
+              id="birthdate"
+              name="birthdate"
+              placeholder="DD/MM/YYYY"
+              style="width: 95%; height: 40px"
+            />
+          </label>
+          <label for="birthdate"
+            >Reservation End Date:
+            <br />
+            <input
+              type="date"
+              id="birthdate"
+              name="birthdate"
+              placeholder="DD/MM/YYYY"
+              style="width: 95%; height: 40px"
+            />
+          </label>
+  
+          <div class="relative">
+            <button
+              id="cancel"
+              type="reset"
+              value="Reset"
+              style="width: 80px; height: 40px"
+            >
+              Cancel
+            </button>
+            <button
+              id="submit"
+              type="submit"
+              value="Submit"
+              style="width: 80px; height: 40px"
+            >
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+       
+      
+    </main>
+    <footer>
+      <p class="legal">
+        &copy; <span id="copyrightyear"></span> | Temple Inn & Suites |
+        Bethesda, MD | <span id="weekday"></span>, <span id="day"></span>
+        <span id="month"></span> <span id="year"></span>
+      </p>
+    </footer>
+  </body>
+</html>

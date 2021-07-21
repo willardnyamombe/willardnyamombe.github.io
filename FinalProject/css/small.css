@@ -9,9 +9,7 @@ body {
     font-family: Verdana;
     font-size: 16px;
 }
-header div.logo-banner {
-    /* background-color: #DCE0E6; */
-}
+
 header .header-item{
     display: block;
 }
@@ -63,8 +61,69 @@ main picture{
     text-align: left;
     
 }
-/* main caption {text-align: left; font-size: .8rem;} */
+main caption {text-align: left; font-size: .8rem;}
 
+
+/* reservation page css */
+main #res-form h1{
+    display: grid;
+    align-text: right;
+}
+.reservation-header{
+    font-size: large;
+    justify-content: center;
+    align-text: right;
+}
+form {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 80%;
+    box-shadow: 10px 15px 17px rgb(233, 231, 231);
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    border: 2px solid rgb(196, 190, 190);
+    padding: 1em;
+    border-radius: 20px;
+    background-color: white;
+    border: 2px solid #24ACF0;
+  }
+  
+ form button {
+    display: inline-block;
+    background-color: white;
+    text-decoration: none;
+    border-color: transparent;
+    border-radius: 5px;
+  }
+ form #submit {
+    background-color: rgb(45, 45, 243);
+    color: white;
+  }
+ form .relative {
+    margin-left: 45%;
+  }
+ form #submit:hover {
+    color: rgb(236, 175, 175);
+    background-color: rgb(87, 87, 238);
+  }
+  
+ form #cancel:hover {
+    color: white;
+    background-color: blue;
+  }
+  
+ form #optional {
+    display: inline;
+    color: rgb(187, 183, 183);
+  }
+ form label {
+    display: inline-block;
+  }
+ form input {
+    margin: 2%;
+    border-color: rgb(196, 190, 190);
+    border-radius: 5px;
+  }
 
 
 

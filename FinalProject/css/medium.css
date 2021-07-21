@@ -20,5 +20,9 @@
         column-count: 2;
         column-rule: 1px solid #ddd;
     }
+
+    main form .relative {
+        margin-left: 45%;
+      }
     
 } /* end of media query */

@@ -14,4 +14,8 @@
     main #joburg-img{ width: 35%;}
     
     div.news {column-count: 3;}
+
+    main form .relative {
+        margin-left: 70%;
+      }
 } /* end of media query */

@@ -63,7 +63,7 @@ function daysOfWeek(date) {
     return weekday[date.getDay()];
 }
 async function getTemples() {
-    const requestURL = 'json/temples.json';
+    const requestURL = 'https://willardnyamombe.github.io/FinalProject/json/temples.json';
 
     fetch(requestURL)
         .then(function (response) {

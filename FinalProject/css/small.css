@@ -67,12 +67,11 @@ main caption {text-align: left; font-size: .8rem;}
 /* reservation page css */
 main #res-form h1{
     display: grid;
-    align-text: right;
 }
 .reservation-header{
     font-size: large;
     justify-content: center;
-    align-text: right;
+
 }
 form {
     font-family: Verdana, Geneva, Tahoma, sans-serif;

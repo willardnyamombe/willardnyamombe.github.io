@@ -18,4 +18,18 @@
     main form .relative {
         margin-left: 70%;
       }
+      .temples{
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+      .temple-images{
+        width: 300px;
+      }
+      main .cards {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns:1fr 1fr 1fr;     
+        
+      }
 } /* end of media query */

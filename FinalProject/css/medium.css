@@ -24,5 +24,20 @@
     main form .relative {
         margin-left: 45%;
       }
+      .temples{
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 1fr 1fr;
+      }
+      .temple-images{
+        width: 385px;
+      }
+      main .cards {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 1fr 1fr;     
+        
+      }
+    
     
 } /* end of media query */

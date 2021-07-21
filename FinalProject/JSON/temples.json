@@ -11,11 +11,24 @@
         "No cafeteria available",
         "No patron housing available",
         "Distribution center nearby"],
-        "session schedule":"",
-        "ordinance schedule":"",
-        "temple closure schedule":"from a JSON source",
-        "summary":"current weather from a 3rd party API",
-        "imageurl":"https://assets.ldscdn.org/90/a0/90a0c0d599f94a2d955930e90fa95b9aa85a5004/idaho_falls_idaho_temple.png",
+        "templeClosureSchedule":[
+            {"2021":["Monday, 13 September 2021 - Monday, 8 November 2021",
+            "Wednesday, 24 November 2021 (Limited Operations)",
+            "Thursday, 25 November 2021",
+            "Friday, 24 December 2021",
+            "Saturday, 25 December 2021",
+            "Friday, 31 December 2021"]},
+            {"2022":["Saturday, 1 January 2022",
+                "Monday, 14 March 2022 - Monday, 28 March 2022",
+                "Saturday, 2 April 2022",
+                "Monday, 12 September 2022 - Monday, 26 September 2022",
+                "Saturday, 1 October 2022",
+                "Wednesday, 23 November 2022 (Limited Operations)",
+                "Thursday, 24 November 2022",
+                "Saturday, 24 December 2022",
+                "Saturday, 31 December 2022"]}],
+       
+        "imageurl":"https://assets.ldscdn.org/90/a0/90a0c0d599f94a2d955930e90fa95b9aa85a5004/idaho_falls_idaho_temple.png"
     },
 
     {
@@ -30,11 +43,24 @@
         "No cafeteria available",
         "No patron housing available",
         "Distribution center nearby"],
-        "session schedule":"",
-        "ordinance schedule":"",
-        "temple closure schedule":"from a JSON source",
-        "summary":"current weather from a 3rd party API",
-        "imageurl":"https://assets.ldscdn.org/29/8a/298a8b01fbc736923e83e7c748e60abcad8511c9/rexburg_idaho_temple.jpeg",
+        "templeClosureSchedule":[{"2021":["Friday, 23 July 2021 (Limited Operations)",
+            "Saturday, 24 July 2021",
+            "Monday, 30 August 2021 - Monday, 6 September 2021",
+            "Saturday, 2 october 2021",
+            "Wednesday, 24 November 2021 - Thursday, 25 November 2021",
+            "Friday, 24 December 2021 - Saturday, 25 December 2021",
+            "Friday, 31 December 2021 - Saturday, 1 January 2022"
+            ]},
+            {"2022":["Saturday, 2 April 2022",
+                "Monday, 11 April 2022 - Monday, 4 July 2022",
+                "Saturday, 23 July 2022",
+                "Saturday, 1 October 2022",
+                "Wednesday, 23 November 2022 - Thursday, 24 November 2022",
+                "Saturday, 24 December 2022",
+                "Saturday, 31 December 2022"
+                ]}],
+
+        "imageurl":"https://assets.ldscdn.org/29/8a/298a8b01fbc736923e83e7c748e60abcad8511c9/rexburg_idaho_temple.jpeg"
         
     } ,   
     {
@@ -48,7 +74,7 @@
         "No cafeteria available",
         "No patron housing available",
         "Distribution center nearby"],
-        "temple closure schedule":[{"2021":["Monday, 13 September 2021 - Monday, 8 November 2021",
+        "templeClosureSchedule":[{"2021":["Monday, 13 September 2021 - Monday, 8 November 2021",
             "Wednesday, 24 November 2021 (Limited Operations)",
             "Thursday, 25 November 2021",
             "Friday, 24 December 2021",
@@ -63,27 +89,9 @@
                 "Thursday, 24 November 2022",
                 "Friday, 23 December 2022",
                 "Saturday, 31 December 2022"]}],
-        "summary":"current weather from a 3rd party API",
-        "imageurl":"https://assets.ldscdn.org/62/5e/625e0629b625e2596ad1c160a45f567f207560cc/kansas_city_temple_lds.jpg",
+    
+        "imageurl":"https://assets.ldscdn.org/62/5e/625e0629b625e2596ad1c160a45f567f207560cc/kansas_city_temple_lds.jpg"
         
-    },
+    }
 
-    {
-        "name":"Oklahoma City Oklahoma Temple",
-        "phone":"405-373-2309",
-        "address1":"12030 N Mustang Rd",
-        "city":"Yukon",
-        "state":"OK",
-        "zip":73099,
-        "history":"",
-        "services":["No clothing rental available",
-        "No cafeteria available",
-        "No patron housing available",
-        "Distribution center nearby"],
-        "session schedule":"",
-        "ordinance schedule":"",
-        "temple closure schedule":"from a JSON source",
-        "summary":"current weather from a 3rd party API",
-        "imageurl":"https://assets.ldscdn.org/75/2c/752cf0dcfabe1870442460d13a2eeb8bda6267a2/oklahoma_city_temple_exterior.jpeg",
-    } 
 ]

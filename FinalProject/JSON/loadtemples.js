@@ -19,33 +19,35 @@ year.textContent = d.getFullYear();
 const footer = document.querySelector("#copyrightyear");
 footer.textContent = d.getFullYear();
 
-//javascript for temple api
-    const requestURL = "js/temples2.json"
-    fetch(requestURL)
-    .then((response)=> {
-        return response.json();
-    })
-    .then((jsonObject)=>{
-        console.log(jsonObject);
-        Object.entries(jsonObject).forEach(([key,temple])=>{
-        //     if(temple.state == "ID"){
-                buildTempleCard(temple);
-        //     }
-        });
-    });
-});
+// //javascript for temple api
+//     const requestURL = "json/temples.json"
+//     fetch(requestURL)
+//     .then((response)=> {
+//         return response.json();
+//     })
+//     .then((jsonObject)=>{
+//         console.log(jsonObject);
+//         Object.entries(jsonObject).forEach(([key,temple])=>{
+//         //     if(temple.state == "ID"){
+//                 buildTempleCard(temple);
+//         //     }
+//         });
+//     });
+// });
 
-function buildTempleCard(temple){
-    console.log(temple);
-    let card = document.createElement("section");
-    card.classList.add("temple");
-    card.innerHTML = `<h2>${temple.name}</h2>
-                     <img src="${temple.imageurl}" alt="${temple.name}">
-                    <p>First President: <b>${temple.presidents[0]} 1st of ${temple.presidents.length}</b></p>
-                    <p>Current Presidents: <b>${temple.presidents[temple.presidents.length-1]}</b></p>`;
-    document.querySelector("#temples").appendChild(card);
+// function buildTempleCard(temple){
+//     console.log(temple);
+//     let card = document.createElement("section");
+//     card.classList.add("temple");
+//     card.innerHTML = `<h2>${temple.name}</h2>
+//                      <img src="${temple.imageurl}" alt="${temple.name}">
+//                     <p><b>Services: </b>${temple.services}</p> <br>
+//                     <p><b>Address: </b>${temple.address1}</p>
+//                     <p><b>Temple Closure Schedule:</b>${temple.templeClosureSchedule[2021]}</p>
+//                     `;
+//     document.querySelector("#temples").appendChild(card);
 
-}
+})
 // Function that creates returns the name of the weekday
 function daysOfWeek(date) {
 
@@ -60,3 +62,85 @@ function daysOfWeek(date) {
 
     return weekday[date.getDay()];
 }
+async function getTemples() {
+    const requestURL = 'json/temples.json';
+
+    fetch(requestURL)
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (jsonObject) {
+            console.log(jsonObject); // temporary checking for valid response and data parsing
+            const temples = jsonObject;
+            for (let i = 0; i < temples.length; i++) {
+                let card = document.createElement('section');
+                let grid = document.createElement('div');
+                let h1 = document.createElement('h1');
+                let phone = document.createElement('p');
+                let address = document.createElement('p');
+                let services = document.createElement('p');
+                let ordinance = document.createElement('section');
+                let closures = document.createElement('p');
+                let image = document.createElement('img');
+
+                h1.textContent = temples[i].name;
+                phone.innerHTML += `
+                <b>Phone Number</b>
+                <br>
+                ${temples[i].phone}`;
+               
+                address.innerHTML = `
+                <b>Address</b>
+                <br>
+                ${temples[i].address1}
+                <br>
+                ${temples[i].city}, ${temples[i].state} ${temples[i].zip}
+                `;
+                const service = temples[i].services;
+                services.innerHTML += `
+                    <b>Services</b>
+                    <br>`;
+                for (let i = 0; i < service.length; i++) {
+                    if (i != 0) {
+                        services.innerHTML += `
+                        <br>
+                        `;
+                    }
+                    services.innerHTML += `${service[i]}`;
+                }
+               
+                const closure = temples[i].templeClosureSchedule;
+                closures.innerHTML += `
+                    <b>Closures</b>
+                    <br>`;
+                for (let i = 0; i < closure.length; i++) {
+                    closures.innerHTML += `${closure[i]}
+                    <br>`;
+                }
+                image.setAttribute('src', temples[i].imageurl);
+                image.setAttribute('alt', temples[i].name);
+                image.classList.add("temple-images");
+                grid.appendChild(phone);
+                
+                grid.appendChild(address);
+                grid.appendChild(services);
+                
+
+                card.appendChild(h1);
+                card.appendChild(grid);
+                
+                card.appendChild(closures);
+                grid.appendChild(image);
+
+                document.querySelector('div.cards').appendChild(card);
+                card.classList.add("card");
+
+
+            }
+        });
+}
+window.addEventListener('load', (event) => {
+    if (document.URL.includes("temples.html")) {
+        getTemples();
+    }
+})
